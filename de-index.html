@@ -207,9 +207,22 @@ footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-tran
     background: #111;
     border-radius: 4px;
   }
-  .ay-card-item:hover > div:first-child {
-    transform: scale(1.05);
-  }
+  .ay-card-item:hover .ay-bg { transform: scale(1.05); }
+  .ay-bg{position:absolute;inset:0;background-size:cover;background-position:center;
+         transition:transform .5s ease, opacity .5s ease}
+  .ay-grad{position:absolute;inset:0;
+           background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 60%)}
+  .ay-num{position:absolute;top:14px;left:14px;font-size:9px;letter-spacing:2px;
+          color:var(--gold);z-index:2}
+  .ay-info{position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2}
+  .ay-name{font-family:'Playfair Display',serif;font-size:clamp(16px,1.5vw,22px);
+           color:#fff;margin:0 0 4px;font-weight:400}
+  .ay-meta{font-size:9px;letter-spacing:2px;text-transform:uppercase;
+           color:rgba(255,255,255,0.45);margin:0 0 12px}
+  .ay-specs{display:flex;gap:16px}
+  .ay-spec-v{font-size:14px;color:var(--gold)}
+  .ay-spec-k{font-size:8px;letter-spacing:1px;text-transform:uppercase;
+             color:rgba(255,255,255,0.35)}
   @media (max-width: 768px) {
     .ay-grid {
       display: flex;
@@ -218,41 +231,45 @@ footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-tran
       gap: 8px;
     }
     .ay-card-item {
-      aspect-ratio: unset !important;
-      height: 110px;
+      aspect-ratio: auto !important;
+      height: 106px;
       display: flex;
       flex-direction: row;
       border-radius: 4px;
     }
-    .ay-card-item > div:first-child {
-      position: static !important;
-      width: 35% !important;
-      height: 100% !important;
-      flex-shrink: 0;
-      background-size: cover !important;
-      background-position: center !important;
-      transition: none;
-    }
-    .ay-card-item > div:nth-child(2) {
-      display: none;
-    }
-    .ay-card-item > div:nth-child(3) {
+    .ay-bg {
       position: relative !important;
       inset: auto !important;
-      flex: 1;
+      flex: 0 0 38%;
+      width: 38%;
+      height: 100%;
+      transition: opacity .5s ease;
+    }
+    .ay-grad { display: none; }
+    .ay-num {
+      top: 9px; right: 12px; left: auto;
+      font-size: 8px; letter-spacing: 1.5px; z-index: 3;
+    }
+    .ay-info {
+      position: relative !important;
+      inset: auto !important;
+      flex: 1; min-width: 0;
       padding: 12px 14px;
-      display: flex !important;
-      flex-direction: column;
-      justify-content: center;
+      display: flex; flex-direction: column; justify-content: center;
       background: #111;
       border-left: 1px solid rgba(255,255,255,0.06);
     }
-    .ay-card-item > div:last-child {
-      position: absolute !important;
-      right: 12px !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
+    .ay-name {
+      font-size: 14px; margin-bottom: 3px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
+    .ay-meta {
+      font-size: 8px; letter-spacing: 1px; margin-bottom: 8px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .ay-specs { gap: 12px; }
+    .ay-spec-v { font-size: 12px; }
+    .ay-spec-k { font-size: 7px; }
   }
   @media (min-width: 1200px) {
     .ay-grid {
@@ -262,14 +279,7 @@ footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-tran
     }
   }
 
-@media (max-width: 768px) {
-  .ay-card h3 { font-size: 13px !important; margin-bottom: 2px !important; }
-  .ay-card p { font-size: 7px !important; margin-bottom: 6px !important; letter-spacing: 1px !important; }
-  .ay-card [style*="padding:20px"] { padding: 10px !important; }
-  .ay-card [style*="gap:16px"] { gap: 8px !important; }
-  .ay-card [style*="font-size:14px;color:var(--gold)"] { font-size: 12px !important; }
-  .ay-card [style*="font-size:8px"] { font-size: 6px !important; }
-}
+
 
   /* Fleet / grid images */
   .ay-bg, .yacht-bg { background-size:cover; background-position:center; }
@@ -378,9 +388,9 @@ footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-tran
     </div>
   </div>
   <div class="hero-stats">
-    <div><div class="hero-stat-num" style="font-size:13px;letter-spacing:1px">Mediterranean</div><div class="hero-stat-label" id="statYachts">Based</div></div>
-    <div><div class="hero-stat-num" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Tailored Weekly</div><div class="hero-stat-label" id="statPorts">Charters</div></div>
-    <div><div class="hero-stat-num" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Crafted for</div><div class="hero-stat-label" id="statYears">Intimate Groups</div></div>
+    <div><div class="hero-stat-num" id="statVal1" style="font-size:13px;letter-spacing:1px">Mediterranean</div><div class="hero-stat-label" id="statYachts">Based</div></div>
+    <div><div class="hero-stat-num" id="statVal2" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Tailored Weekly</div><div class="hero-stat-label" id="statPorts">Charters</div></div>
+    <div><div class="hero-stat-num" id="statVal3" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Crafted for</div><div class="hero-stat-label" id="statYears">Intimate Groups</div></div>
   </div>
 </section>
 
@@ -395,9 +405,9 @@ footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-tran
   <div class="intro-content reveal">
     <p class="section-tag" id="aboutTag">About Argentum</p>
     <h2 id="aboutTitle">A different kind<br>of <em>charter</em> experience.</h2>
-    <p id="introP1">Argentum Yachting offers privately curated journeys along the distinguished coasts of the Aegean and Mediterranean, designed for those who value elegance, privacy, and refined simplicity at sea.</p>
-    <p id="introP2">With over 15 years of family experience in yachting, each voyage is shaped with a deep understanding of hospitality, discretion, and timeless coastal living.</p>
-    <p style="font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:#888;margin-top:28px;line-height:1.6;border-left:2px solid #C9A84C;padding-left:16px;">Not merely a charter, but a quieter way to experience the sea.</p>
+    <p id="introP1">Argentum Yachting creates privately tailored yacht journeys along the Turkish Aegean and Mediterranean. From selecting the right yacht to shaping the route, onboard experience and every detail in between, each charter is planned around the people on board.</p>
+    <p id="introP2">Built on more than 15 years of family experience in yachting, our approach combines local knowledge with personal guidance before and throughout your journey.</p>
+    <p id="introQuote" style="font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:#888;margin-top:28px;line-height:1.6;border-left:2px solid #C9A84C;padding-left:16px;">Not merely a charter, but a quieter way to experience the sea.</p>
   </div>
 </div>
 
@@ -615,6 +625,9 @@ reveals.forEach(el=>obs.observe(el));
 .detail-cta a:hover{opacity:0.85}
 
 .detail-specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);margin-bottom:56px}
+.detail-specs[data-n="3"]{grid-template-columns:repeat(3,1fr)}
+.detail-specs[data-n="2"]{grid-template-columns:repeat(2,1fr)}
+.detail-note{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;line-height:1.75;color:#C9A84C;opacity:.9;max-width:680px;padding-left:30px;margin:0 0 56px}
 .detail-spec{background:#0C0C0C;padding:32px 28px}
 .detail-spec-val{font-family:'Playfair Display',serif;font-size:36px;color:#C9A84C;line-height:1}
 .detail-spec-key{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:8px}
@@ -630,7 +643,8 @@ reveals.forEach(el=>obs.observe(el));
 @media(max-width:768px){
   .detail-content{padding:48px 20px}
   .detail-header{grid-template-columns:1fr}
-  .detail-specs{grid-template-columns:repeat(2,1fr)}
+  .detail-specs{grid-template-columns:repeat(2,1fr)!important}
+  .detail-note{font-size:14px;padding-left:22px;margin-bottom:40px}
   .slider-btn{width:40px;height:40px;font-size:14px}
 }
 </style>
@@ -693,6 +707,7 @@ reveals.forEach(el=>obs.observe(el));
     <div class="detail-specs" id="detailSpecs"></div>
     
     <p class="detail-desc" id="detailDesc"></p>
+    <p class="detail-note" id="detailNote"></p>
     
     <div class="detail-contact">
       <a href="https://wa.me/905393358280?text=Hello%2C%20I%20would%20like%20to%20get%20information%20about%20Argentum%20Yachting." class="btn-detail-wa" target="_blank">WhatsApp ile İletişim</a>
@@ -803,18 +818,17 @@ function renderAllYachts(){
   document.getElementById('fCount').textContent = list.length + ' ' + l.shown;
   if(!list.length){ el.innerHTML = `<div class="ay-empty">${l.none}</div>`; return; }
   el.innerHTML = list.map((y,i) => `
-    <div class="ay-card ay-card-item" onclick="openYacht('${y.id}')"
-         style="position:relative;overflow:hidden;cursor:pointer;background:#111">
-      <div class="ay-bg" style="position:absolute;inset:0;background-image:url('${photoSrc(y,0,true)}');transition:transform .5s ease,opacity .5s ease"></div>
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 60%)"></div>
-      <div style="position:absolute;top:14px;left:14px;font-size:9px;letter-spacing:2px;color:var(--gold)">${String(i+1).padStart(2,'0')} / ${list.length}</div>
-      <div style="position:absolute;bottom:0;left:0;right:0;padding:20px">
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(16px,1.5vw,22px);color:#fff;margin-bottom:4px">${y.name}</h3>
-        <p style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:12px">${typeLabel(y.type)} · ${y.length} · ${y.base}</p>
-        <div style="display:flex;gap:16px">
-          <div><div style="font-size:14px;color:var(--gold)">${y.guests}</div><div style="font-size:8px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.35)">${l.guests}</div></div>
-          <div><div style="font-size:14px;color:var(--gold)">${y.cabins}</div><div style="font-size:8px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.35)">${l.cabins}</div></div>
-          ${y.crew ? `<div><div style="font-size:14px;color:var(--gold)">${y.crew}</div><div style="font-size:8px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.35)">${l.crew}</div></div>` : ''}
+    <div class="ay-card ay-card-item" onclick="openYacht('${y.id}')">
+      <div class="ay-bg" style="background-image:url('${photoSrc(y,0,true)}')"></div>
+      <div class="ay-grad"></div>
+      <div class="ay-num">${String(i+1).padStart(2,'0')} / ${list.length}</div>
+      <div class="ay-info">
+        <h3 class="ay-name">${y.name}</h3>
+        <p class="ay-meta">${typeLabel(y.type)} · ${y.length} · ${y.base}</p>
+        <div class="ay-specs">
+          <div><div class="ay-spec-v">${y.guests}</div><div class="ay-spec-k">${l.guests}</div></div>
+          <div><div class="ay-spec-v">${y.cabins}</div><div class="ay-spec-k">${l.cabins}</div></div>
+          ${y.crew ? `<div><div class="ay-spec-v">${y.crew}</div><div class="ay-spec-k">${l.crew}</div></div>` : ''}
         </div>
       </div>
     </div>`).join('');
@@ -841,13 +855,31 @@ function openYacht(id) {
   document.getElementById('detailName').textContent = yacht.name;
   document.getElementById('detailType').textContent = typeLabel(yacht.type) + ' · ' + yacht.base;
   document.getElementById('detailYear').textContent = (yacht.year && yacht.year !== '—') ? l.built + yacht.year : '';
-  document.getElementById('detailDesc').textContent =
-    (yacht.descriptions && (yacht.descriptions[currentLang] || yacht.descriptions.en)) || '';
+  const full = (yacht.descriptions && (yacht.descriptions[currentLang] || yacht.descriptions.en)) || '';
+  const NOTE_RES = [
+    /\s*Alternative embarkation points may be arranged[^.]*\.\s*$/,
+    /\s*Tercih etti\u011finiz g\u00fczergaha g\u00f6re alternatif bini\u015f noktalar\u0131 ayarlanabilir\.\s*$/,
+    /\s*Se pueden organizar puntos de embarque alternativos[^.]*\.\s*$/,
+    /\s*\u00c8 possibile concordare punti di imbarco alternativi[^.]*\.\s*$/
+  ];
+  let body = full, note = '';
+  for(const re of NOTE_RES){
+    const m = full.match(re);
+    if(m){ note = m[0].trim(); body = full.replace(re, '').trim(); break; }
+  }
+  const descEl = document.getElementById('detailDesc');
+  const noteEl = document.getElementById('detailNote');
+  descEl.textContent = body;
+  noteEl.textContent = note;
+  noteEl.style.display = note ? '' : 'none';
+  descEl.style.marginBottom = note ? '28px' : '';
 
   const specs = [[yacht.length, l.length], [yacht.guests, l.guests], [yacht.cabins, l.cabins]];
   if(yacht.crew) specs.push([yacht.crew, l.crew]);
   else if(yacht.beam) specs.push([yacht.beam, l.beam]);
-  document.getElementById('detailSpecs').innerHTML = specs.map(
+  const specsEl = document.getElementById('detailSpecs');
+  specsEl.setAttribute('data-n', specs.length);
+  specsEl.innerHTML = specs.map(
     s => `<div class="detail-spec"><div class="detail-spec-val">${s[0]}</div><div class="detail-spec-key">${s[1]}</div></div>`).join('');
 
   const track = document.getElementById('sliderTrack');
@@ -1017,6 +1049,13 @@ function setLang(lang) {
   apply('s6title', t.s6title); apply('s6desc', t.s6desc);
   apply('introP1', t.introP1);
   apply('introP2', t.introP2);
+  const IQ = {
+    en: 'Not merely a charter, but a quieter way to experience the sea.',
+    tr: 'Sadece bir kiralama değil, denizi daha sakin bir şekilde deneyimlemenin yolu.',
+    es: 'No es solo un chárter, sino una forma más serena de vivir el mar.',
+    it: 'Non semplicemente un charter, ma un modo più quieto di vivere il mare.'
+  };
+  apply('introQuote', IQ[lang] || IQ.en);
   
   // Available badges
   document.querySelectorAll('.yacht-badge').forEach(el => el.textContent = t.availableBadge);
@@ -1031,11 +1070,16 @@ function setLang(lang) {
   }
   
   // Stat labels
-  const sl2 = {"en": ["Luxury Yachts", "Ports", "Years at Sea"], "tr": ["Lüks Yat", "Liman", "Denizde Yıl"], "es": ["Yates de Lujo", "Puertos", "Años en el Mar"], "it": ["Yacht di Lusso", "Porti", "Anni in Mare"]};
-  const s = sl2[lang] || sl2['en'];
-  apply('statYachts', s[0]);
-  apply('statPorts', s[1]);
-  apply('statYears', s[2]);
+  const HERO_STATS = {
+    en: [["Mediterranean","Based"],["Tailored Weekly","Charters"],["Crafted for","Intimate Groups"]],
+    tr: [["Akdeniz & Ege","Merkezli"],["Size Özel","Haftalık Kiralama"],["Küçük Gruplar","İçin Tasarlandı"]],
+    es: [["Mediterráneo","Nuestra Base"],["Charters Semanales","A Medida"],["Grupos Reducidos","Pensado Para"]],
+    it: [["Mediterraneo","La Nostra Base"],["Charter Settimanali","Su Misura"],["Piccoli Gruppi","Pensato Per"]]
+  };
+  const hs = HERO_STATS[lang] || HERO_STATS.en;
+  apply('statVal1', hs[0][0]); apply('statYachts', hs[0][1]);
+  apply('statVal2', hs[1][0]); apply('statPorts',  hs[1][1]);
+  apply('statVal3', hs[2][0]); apply('statYears',  hs[2][1]);
   
   
   // View All / Close All translations
