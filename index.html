@@ -712,7 +712,7 @@ reveals.forEach(el=>obs.observe(el));
     <p class="detail-note" id="detailNote"></p>
     
     <div class="detail-contact">
-      <a href="https://wa.me/905393358280?text=Hello%2C%20I%20would%20like%20to%20get%20information%20about%20Argentum%20Yachting." class="btn-detail-wa" target="_blank">WhatsApp ile İletişim</a>
+      <a href="https://wa.me/905393358280" class="btn-detail-wa" id="waBtnDetail" target="_blank">WhatsApp Booking</a>
       <a href="mailto:info@argentumyachting.com" class="btn-detail-mail">info@argentumyachting.com</a>
     </div>
   </div>
@@ -907,6 +907,17 @@ function openYacht(id) {
   setTimeout(() => page.classList.add('visible'), 10);
   const t2 = translations[currentLang];
   if(t2){ apply('allYachtsBtn', t2.allYachts); apply('waBtnDetail', t2.waBooking); }
+  const WA_MSG = {
+    en: n => `Hello, I would like to get information about ${n} — Argentum Yachting.`,
+    tr: n => `Merhaba, ${n} hakkında bilgi almak istiyorum — Argentum Yachting.`,
+    es: n => `Hola, me gustaría recibir información sobre ${n} — Argentum Yachting.`,
+    it: n => `Salve, vorrei ricevere informazioni su ${n} — Argentum Yachting.`
+  };
+  const waEl = document.getElementById('waBtnDetail');
+  if(waEl){
+    const build = WA_MSG[currentLang] || WA_MSG.en;
+    waEl.href = 'https://wa.me/905393358280?text=' + encodeURIComponent(build(yacht.name));
+  }
 }
 
 function closeDetail() {
@@ -1040,6 +1051,14 @@ function setLang(lang) {
   apply('contactDesc', t.contactDesc);
   apply('planCharter', t.planCharter);
   apply('waBtn', t.waBtn);
+  const WA_GENERAL = {
+    en: 'Hello, I would like to get information about Argentum Yachting.',
+    tr: 'Merhaba, Argentum Yachting hakkında bilgi almak istiyorum.',
+    es: 'Hola, me gustaría recibir información sobre Argentum Yachting.',
+    it: 'Salve, vorrei ricevere informazioni su Argentum Yachting.'
+  };
+  const waMain = document.getElementById('waBtn');
+  if(waMain) waMain.href = 'https://wa.me/905393358280?text=' + encodeURIComponent(WA_GENERAL[lang] || WA_GENERAL.en);
   apply('emailBtn', t.emailBtn);
   apply('instaBtn', t.instaBtn);
   apply('allYachtsBtn', t.allYachts);
