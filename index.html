@@ -1,1242 +1,819 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Argentum Yachting | Luxury Yacht Charter Turkey | Marmaris · Bodrum · Göcek</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Argentum Yachting — Yönetim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-:root{--black:#0C0C0C;--white:#F5F3EF;--gold:#C9A84C;--gray:#888;--light:#F0EDE8}
-body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--black);overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:rgba(12,12,12,0.93);backdrop-filter:blur(12px)}
-.nav-logo{display:flex;align-items:center;text-decoration:none}
-.nav-logo-mark{width:32px;height:32px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;color:var(--gold)}
-.nav-logo-text{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#fff}
-.nav-links{display:flex;gap:36px;list-style:none;min-width:360px;justify-content:center}
-.nav-links a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);text-decoration:none;transition:color .3s}
-.nav-links a:hover{color:#fff}
-.nav-cta{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--black);background:var(--gold);text-decoration:none;padding:10px 28px;transition:opacity .3s}
-.nav-cta:hover{opacity:.85}
-.hero{height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;background:var(--black)}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(to right,rgba(12,12,12,.72) 35%,rgba(12,12,12,.1) 100%),url('images/site/hero-bg.webp') center 40%/cover no-repeat}
-.hero-bg::after{content:'';position:absolute;top:30%;left:30%;right:0;bottom:0;background:radial-gradient(ellipse 70% 50% at 70% 60%,rgba(30,80,120,.3),transparent)}
-.hero-content{position:relative;z-index:2;padding:120px 48px 0;max-width:760px}
-.hero-tag{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:28px;opacity:0;animation:fadeUp .8s .4s forwards}
-.hero-tag::before{content:'';width:32px;height:1px;background:var(--gold)}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,88px);font-weight:400;line-height:1.05;color:#fff;margin-bottom:28px;opacity:0;animation:fadeUp .8s .6s forwards}
-.hero-title em{font-style:italic;color:rgba(255,255,255,.45)}
-.hero-desc{font-size:15px;line-height:1.7;color:rgba(255,255,255,.5);max-width:420px;margin-bottom:24px;opacity:0;animation:fadeUp .8s .8s forwards}
-.hero-btns{display:flex;gap:16px;align-items:center;opacity:0;animation:fadeUp .8s 1s forwards;margin-bottom:0}
-.btn-gold{font-size:11px;letter-spacing:3px;text-transform:uppercase;background:var(--gold);color:var(--black);text-decoration:none;padding:16px 40px;transition:opacity .3s}
-.btn-gold:hover{opacity:.85}
-.btn-outline{font-size:11px;letter-spacing:3px;text-transform:uppercase;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.6);text-decoration:none;padding:16px 40px;transition:all .3s}
-.btn-outline:hover{border-color:rgba(255,255,255,.6);color:#fff}
-.hero-stats{position:absolute;bottom:48px;right:48px;z-index:2;display:flex;gap:48px;opacity:0;animation:fadeIn .8s 1.2s forwards;align-items:flex-end}
-.hero-stat-num{font-family:'Playfair Display',serif;font-size:36px;color:#fff;line-height:1}
-.hero-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:6px}
-.marquee-wrap{background:var(--gold);padding:14px 0;overflow:hidden;display:flex}
-.marquee-track{display:flex;animation:marquee 22s linear infinite;white-space:nowrap}
-.marquee-item{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--black);padding:0 32px;display:flex;align-items:center;gap:32px}
-.marquee-item::after{content:'◆';font-size:8px}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.intro{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
-.intro-img{background:url('images/site/intro-img.webp') center center/cover no-repeat;position:relative;min-height:500px}
-.intro-img::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 50% 60%,rgba(30,100,150,.25),transparent)}
-.intro-content{padding:80px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--white)}
-.section-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:flex;align-items:center;gap:12px}
-.section-tag::before{content:'';width:24px;height:1px;background:var(--gold)}
-.intro-content h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.15;margin-bottom:24px}
-.intro-content h2 em{font-style:italic;color:var(--gray)}
-.intro-content p{font-size:15px;line-height:1.8;color:#555;margin-bottom:16px;max-width:420px}
-.intro-locations{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
-.loc-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;border:1px solid #ddd;color:var(--gray);padding:8px 18px}
-.fleet{background:var(--black);padding:100px 0}
-.fleet-header{display:flex;align-items:flex-end;justify-content:space-between;padding:0 48px;margin-bottom:56px}
-.fleet-header h2{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,64px);font-weight:400;color:#fff;line-height:1.1}
-.fleet-header h2 em{font-style:italic;color:rgba(255,255,255,.35)}
-.fleet-header p{font-size:13px;color:rgba(255,255,255,.4);max-width:280px;text-align:right;line-height:1.6}
-.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:0 2px}
-.yacht-card{flex:1;min-width:0;position:relative;aspect-ratio:9/16;overflow:hidden;cursor:pointer}
-.yacht-bg{position:absolute;inset:0;transition:transform .7s ease}
-.yacht-card:hover .yacht-bg{transform:scale(1.06)}
-.yacht-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.1) 50%,transparent 100%)}
-.yacht-info{position:absolute;bottom:0;left:0;right:0;padding:36px 32px}
-.yacht-num{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.yacht-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#fff;margin-bottom:6px}
-.yacht-type{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:24px}
-.yacht-specs{display:flex;gap:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1)}
-.spec-val{font-family:'Playfair Display',serif;font-size:20px;color:var(--gold)}
-.spec-key{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:2px}
-.yacht-badge{position:absolute;top:24px;right:24px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.4);padding:6px 14px;background:rgba(0,0,0,.5)}
-.destinations{background:var(--white)}
-.dest-header{padding:100px 48px 64px}
-.dest-header h2{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,64px);font-weight:400;line-height:1.1;max-width:600px}
-.dest-header h2 em{font-style:italic;color:var(--gray)}
-.dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;padding:0 2px 2px}
-.dest-card{aspect-ratio:3/4;position:relative;overflow:hidden;cursor:pointer;background:#080d16}
-.dest-card-bg{position:absolute;inset:0;transition:transform .6s ease}
-.dest-card:hover .dest-card-bg{transform:scale(1.06)}
-.dest-card-overlay{display:none}
-.dest-card-content{display:none}
-.dest-card-name{display:none}
-.dest-card-desc{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.5)}
-.services{background:var(--light);padding:100px 48px}
-.services-header{margin-bottom:56px}
-.services-header h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.1;max-width:500px}
-.services-header h2 em{font-style:italic;color:var(--gray)}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#ddd}
-.service-card{background:var(--light);padding:48px 40px;border-bottom:2px solid transparent;transition:all .3s}
-.service-card:hover{background:#fff;border-bottom-color:var(--gold)}
-.service-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;color:#e0d8cc;line-height:1;margin-bottom:24px}
-.service-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;margin-bottom:12px}
-.service-desc{font-size:13px;line-height:1.8;color:#666}
-.testimonial{background:var(--black);padding:120px 48px;text-align:center}
-.testimonial-salutation{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(14px,1.3vw,17px);color:rgba(255,255,255,0.4);margin:0 0 20px;letter-spacing:.3px}
-.testimonial blockquote{font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,34px);font-style:normal;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.85);max-width:800px;margin:0 auto;line-height:1.5}
-.testimonial cite{display:block;margin-top:32px;font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-style:normal}
-.contact{background:var(--white);display:grid;grid-template-columns:1fr 1fr;min-height:520px}
-.contact-left{background:var(--gold);padding:80px 64px;display:flex;flex-direction:column;justify-content:space-between}
-.contact-left h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;line-height:1.1;color:var(--black)}
-.contact-left h2 em{font-style:italic}
-.contact-left p{font-size:14px;line-height:1.7;color:rgba(0,0,0,.6);max-width:360px}
-.contact-right{padding:80px 64px;display:flex;flex-direction:column;justify-content:center;gap:16px}
-.contact-right h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;margin-bottom:24px}
-.btn-black{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;background:var(--black);color:#fff;text-decoration:none;padding:18px 36px;transition:opacity .3s;width:fit-content}
-.btn-black:hover{opacity:.8}
-.btn-border{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;border:1.5px solid var(--black);color:var(--black);text-decoration:none;padding:18px 36px;transition:all .3s;width:fit-content}
-.btn-border:hover{background:var(--black);color:#fff}
-.contact-info{margin-top:32px;padding-top:32px;border-top:1px solid #e0e0e0;font-size:13px;color:var(--gray);line-height:1.8}
-footer{background:var(--black);padding:32px 48px;display:flex;align-items:center;justify-content:space-between}
-footer p{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.25);text-transform:uppercase}
-.footer-credit{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(201,168,76,.5);text-decoration:none;transition:color .3s}
-.footer-credit:hover{color:var(--gold)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:.12s}
-.reveal-delay-2{transition-delay:.24s}
-.reveal-delay-3{transition-delay:.36s}
-@media(max-width:768px){
-  nav{padding:0 20px}.nav-links{display:none}
-  .hero-content{padding:100px 20px 0}.hero-stats{display:none}
-  .intro{grid-template-columns:1fr}.intro-content{padding:48px 24px}
-  .fleet-grid{grid-template-columns:1fr}.fleet-header{padding:0 20px;flex-direction:column;align-items:flex-start;gap:16px}.fleet-header p{text-align:left}
-  .dest-grid{grid-template-columns:1fr 1fr}.dest-header{padding:60px 20px 40px}
-  .services{padding:60px 20px}.services-grid{grid-template-columns:1fr}
-  .contact{grid-template-columns:1fr}.contact-left,.contact-right{padding:48px 24px}
-  footer{flex-direction:column;gap:12px;padding:24px 20px}
+:root{
+  --black:#0C0C0C; --panel:#141414; --line:rgba(255,255,255,0.09);
+  --gold:#C9A84C; --txt:rgba(255,255,255,0.88); --dim:rgba(255,255,255,0.45);
+  --dimmer:rgba(255,255,255,0.28); --red:#C86A5A; --green:#6FA36F;
 }
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:var(--txt);
+     font-family:'DM Sans',system-ui,sans-serif;font-size:14px;line-height:1.55}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400;margin:0}
+button{font-family:inherit;font-size:13px;cursor:pointer;border-radius:3px;
+       transition:all .2s;border:1px solid var(--line);background:transparent;color:var(--txt);padding:10px 18px}
+button:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}
+button:disabled{opacity:.35;cursor:not-allowed}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:#0C0C0C;font-weight:500;
+          letter-spacing:1.5px;text-transform:uppercase;font-size:11px;padding:13px 26px}
+.btn-gold:hover:not(:disabled){opacity:.85;color:#0C0C0C}
+.btn-danger:hover:not(:disabled){border-color:var(--red);color:var(--red)}
+.btn-sm{padding:6px 11px;font-size:11px}
+input,textarea,select{width:100%;background:#0A0A0A;border:1px solid var(--line);color:var(--txt);
+  font-family:inherit;font-size:14px;padding:11px 13px;border-radius:3px;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+textarea{resize:vertical;min-height:96px;line-height:1.7}
+label{display:block;font-size:10px;letter-spacing:1.8px;text-transform:uppercase;
+      color:var(--dim);margin-bottom:7px}
+.field{margin-bottom:20px}
+.row{display:grid;gap:16px}
+header{position:sticky;top:0;z-index:50;background:rgba(12,12,12,.96);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);padding:0 28px;height:66px;display:flex;align-items:center;gap:18px}
+header h1{font-size:17px}
+header .tag{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.spacer{flex:1}
+main{max-width:1180px;margin:0 auto;padding:30px 28px 120px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.hidden{display:none !important}
+.muted{color:var(--dim)}
+.small{font-size:12px}
 
-@media(max-width:768px){
-  .fleet-grid{
-    display:flex !important;
-    flex-direction:row !important;
-    overflow-x:auto !important;
-    gap:2px !important;
-    padding:0 !important;
-    scroll-snap-type:x proximity;overscroll-behavior-x:contain;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-  }
-  .fleet-grid::-webkit-scrollbar{display:none}
-  .yacht-card{
-    min-width:75vw !important;
-    flex-shrink:0;
-    aspect-ratio:9/16 !important;
-    scroll-snap-align:start;
-  }
-  .fleet-header{
-    padding:0 20px;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:16px;
-    margin-bottom:32px;
-  }
-  .fleet-header p{text-align:left}
+/* giriş */
+#login{max-width:520px;margin:12vh auto;padding:40px 36px}
+#login h2{font-size:26px;margin-bottom:10px}
+#login ol{color:var(--dim);font-size:13px;line-height:1.95;padding-left:20px;margin:18px 0 24px}
+#login code{background:#000;padding:2px 6px;border-radius:2px;color:var(--gold);font-size:12px}
+
+/* liste */
+.toolbar{display:flex;gap:12px;align-items:center;margin-bottom:22px;flex-wrap:wrap}
+.toolbar input{max-width:300px}
+.ylist{display:grid;gap:8px}
+.yrow{display:flex;align-items:center;gap:16px;padding:11px 14px;background:var(--panel);
+      border:1px solid var(--line);border-radius:4px}
+.yrow:hover{border-color:rgba(255,255,255,.2)}
+.ythumb{width:76px;height:52px;border-radius:3px;background:#000 center/cover no-repeat;flex-shrink:0}
+.yname{font-family:'Playfair Display',serif;font-size:16px}
+.ymeta{font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:var(--dim);margin-top:3px}
+.ychanged{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);
+          border:1px solid var(--gold);border-radius:2px;padding:2px 7px}
+
+/* fotoğraflar */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px}
+.pcell{position:relative;aspect-ratio:4/3;background:#000 center/cover no-repeat;
+       border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.pcell.cover{border-color:var(--gold);border-width:2px}
+.pbadge{position:absolute;top:6px;left:6px;background:var(--gold);color:#0C0C0C;
+        font-size:8px;letter-spacing:1.3px;text-transform:uppercase;padding:3px 7px;border-radius:2px;font-weight:500}
+.pnum{position:absolute;top:6px;right:8px;font-size:10px;color:#fff;text-shadow:0 1px 4px #000}
+.pacts{position:absolute;inset:auto 0 0 0;display:flex;gap:1px;background:rgba(0,0,0,.84);
+       opacity:0;transition:opacity .2s}
+.pcell:hover .pacts{opacity:1}
+.pacts button{flex:1;border:none;border-radius:0;padding:7px 0;font-size:11px;background:transparent}
+.pnew{border-style:dashed;border-color:rgba(255,255,255,.2);display:flex;flex-direction:column;
+      align-items:center;justify-content:center;gap:5px;cursor:pointer;color:var(--dim);
+      font-size:12px;text-align:center;padding:14px;line-height:1.4}
+.pnew:hover{border-color:var(--gold);color:var(--gold)}
+
+/* yayınlama çubuğu */
+#bar{position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(14,14,14,.97);
+     backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:14px 28px;
+     display:flex;align-items:center;gap:16px}
+#bar .n{font-size:12px;color:var(--dim)}
+
+/* bildirim */
+/* kendi soru penceremiz */
+#modal{position:fixed;inset:0;z-index:120;background:rgba(6,6,6,.82);display:flex;
+       align-items:center;justify-content:center;padding:20px}
+#modalBox{background:var(--panel);border:1px solid var(--line);border-radius:5px;
+          max-width:460px;width:100%;padding:30px 28px;animation:pop .18s ease}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#modalBox h3{font-size:21px;margin-bottom:10px}
+#modalBox p{color:var(--dim);font-size:13px;line-height:1.7;margin:0 0 20px;white-space:pre-line}
+#modalBox .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+
+#toast{position:fixed;top:82px;right:24px;z-index:90;max-width:380px;display:grid;gap:8px}
+.toast{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
+       border-radius:3px;padding:13px 16px;font-size:13px;animation:slide .25s ease}
+.toast.err{border-left-color:var(--red)}
+.toast.ok{border-left-color:var(--green)}
+@keyframes slide{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+
+/* ilerleme */
+#progress{position:fixed;inset:0;z-index:100;background:rgba(8,8,8,.93);
+          display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px}
+#progress .lbl{font-size:13px;color:var(--dim);letter-spacing:.4px}
+.pbar{width:300px;height:2px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+.pbar>div{height:100%;background:var(--gold);width:0;transition:width .3s}
+
+@media(max-width:720px){
+  main{padding:22px 16px 130px} header{padding:0 16px;gap:12px}
+  .yrow{flex-wrap:wrap} #bar{padding:12px 16px;flex-wrap:wrap}
+  #toast{right:12px;left:12px;max-width:none}
 }
-
-
-}
-
-
-
-
-/* LANGUAGE DROPDOWN */
-.lang-dropdown{position:relative;margin-left:16px}
-.lang-current{
-  display:flex;align-items:center;gap:8px;
-  font-size:11px;letter-spacing:2px;text-transform:uppercase;
-  color:rgba(255,255,255,0.7);background:transparent;
-  border:1px solid rgba(255,255,255,0.25);
-  padding:10px 16px;cursor:pointer;transition:all 0.3s;
-  font-family:'DM Sans',sans-serif;
-  height:100%;
-}
-.lang-current:hover{color:#fff;border-color:rgba(255,255,255,0.4)}
-.lang-current::after{content:'▾';font-size:10px;margin-left:4px}
-.lang-menu{
-  position:absolute;top:calc(100% + 4px);right:0;left:auto;
-  background:#111;border:1px solid rgba(255,255,255,0.15);
-  min-width:140px;z-index:300;display:none;
-}
-.lang-menu.open{display:block}
-.lang-option{
-  display:block;padding:10px 16px;
-  font-size:11px;letter-spacing:2px;text-transform:uppercase;
-  color:rgba(255,255,255,0.6);cursor:pointer;
-  transition:all 0.2s;font-family:'DM Sans',sans-serif;
-  border:none;background:none;width:100%;text-align:left;
-}
-.lang-option:hover{background:rgba(255,255,255,0.08);color:#fff}
-.lang-option.active{color:#C9A84C}
-
-  /* All Yachts Grid - Responsive */
-  .ay-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    padding: 24px;
-  }
-  .ay-card-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    aspect-ratio: 3/4;
-    background: #111;
-    border-radius: 4px;
-  }
-  .ay-card-item:hover .ay-bg { transform: scale(1.05); }
-  .ay-bg{position:absolute;inset:0;background-size:cover;background-position:center;
-         transition:transform .5s ease, opacity .5s ease}
-  .ay-grad{position:absolute;inset:0;
-           background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.2) 60%)}
-  .ay-num{position:absolute;top:14px;left:14px;font-size:9px;letter-spacing:2px;
-          color:var(--gold);z-index:2}
-  .ay-info{position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2}
-  .ay-name{font-family:'Playfair Display',serif;font-size:clamp(16px,1.5vw,22px);
-           color:#fff;margin:0 0 4px;font-weight:400}
-  .ay-meta{font-size:9px;letter-spacing:2px;text-transform:uppercase;
-           color:rgba(255,255,255,0.45);margin:0 0 12px}
-  .ay-specs{display:flex;gap:16px}
-  .ay-spec-v{font-size:14px;color:var(--gold)}
-  .ay-spec-k{font-size:8px;letter-spacing:1px;text-transform:uppercase;
-             color:rgba(255,255,255,0.35)}
-  @media (max-width: 768px) {
-    .ay-grid {
-      display: flex;
-      flex-direction: column;
-      padding: 12px;
-      gap: 8px;
-    }
-    .ay-card-item {
-      aspect-ratio: auto !important;
-      height: 106px;
-      display: flex;
-      flex-direction: row;
-      border-radius: 4px;
-    }
-    .ay-bg {
-      position: relative !important;
-      inset: auto !important;
-      flex: 0 0 38%;
-      width: 38%;
-      height: 100%;
-      transition: opacity .5s ease;
-    }
-    .ay-grad { display: none; }
-    .ay-num {
-      top: 9px; right: 12px; left: auto;
-      font-size: 8px; letter-spacing: 1.5px; z-index: 3;
-    }
-    .ay-info {
-      position: relative !important;
-      inset: auto !important;
-      flex: 1; min-width: 0;
-      padding: 12px 14px;
-      display: flex; flex-direction: column; justify-content: center;
-      background: #111;
-      border-left: 1px solid rgba(255,255,255,0.06);
-    }
-    .ay-name {
-      font-size: 14px; margin-bottom: 3px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .ay-meta {
-      font-size: 8px; letter-spacing: 1px; margin-bottom: 8px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    }
-    .ay-specs { gap: 12px; }
-    .ay-spec-v { font-size: 12px; }
-    .ay-spec-k { font-size: 7px; }
-  }
-  @media (min-width: 1200px) {
-    .ay-grid {
-      grid-template-columns: repeat(3, 1fr);
-      padding: 32px;
-      gap: 10px;
-    }
-  }
-
-
-
-  /* Fleet / grid images */
-  .ay-bg, .yacht-bg { background-size:cover; background-position:center; }
-  .ay-filter{
-    appearance:none;-webkit-appearance:none;
-    background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23C9A84C'/%3E%3C/svg%3E") no-repeat right 12px center;
-    border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.75);
-    font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
-    padding:10px 34px 10px 14px;cursor:pointer;border-radius:2px;transition:border-color .25s;
-  }
-  .ay-filter:hover,.ay-filter:focus{border-color:var(--gold);outline:none}
-  .ay-filter option{background:#111;color:#fff;text-transform:none;letter-spacing:0}
-  .ay-filter-reset{
-    background:transparent;border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.45);
-    font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
-    padding:10px 18px;cursor:pointer;border-radius:2px;transition:all .25s;
-  }
-  .ay-filter-reset:hover{border-color:var(--gold);color:var(--gold)}
-  .ay-empty{grid-column:1/-1;padding:64px 12px;text-align:center;color:rgba(255,255,255,0.4);font-size:13px}
-  /* HOW IT WORKS */
-  .steps{display:flex;flex-direction:column;gap:22px;margin-top:28px}
-  .step{display:flex;gap:16px;align-items:flex-start}
-  .step-num{font-family:'Playfair Display',serif;font-size:13px;color:rgba(0,0,0,0.35);
-            letter-spacing:1px;padding-top:2px;min-width:26px}
-  .step h4{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:.5px;
-           margin:0 0 4px;color:#111}
-  .step p{font-size:13px;line-height:1.65;color:rgba(0,0,0,0.6);margin:0}
-  @media(max-width:768px){ .steps{gap:18px} .ay-filter,.ay-filter-reset{font-size:10px;padding:9px 30px 9px 12px} }
 </style>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Argentum Yachting — Luxury private yacht charters in Turkey. Sail the Aegean and Mediterranean with our fleet of 42 exceptional gulets. Marmaris, Bodrum, Göcek, Bozburun.">
-  <meta name="keywords" content="yacht charter Turkey, luxury yacht rental, blue cruise Turkey, gulet charter, Marmaris yacht, Bodrum yacht, Göcek sailing, private yacht Turkey, mavi yolculuk, yat kiralama Türkiye">
-  <meta name="author" content="Argentum Yachting">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0C0C0C">
-  <link rel="canonical" href="https://www.argentumyachting.com">
-
-  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
-  <meta property="og:title" content="Argentum Yachting — Luxury Yacht Charter Turkey">
-  <meta property="og:description" content="Private yacht charters along the most spectacular coastlines of the Aegean and Mediterranean. 5 luxury gulets. Fully crewed. Fully curated.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.argentumyachting.com">
-  <meta property="og:site_name" content="Argentum Yachting">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="tr_TR">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Argentum Yachting — Luxury Yacht Charter Turkey">
-  <meta name="twitter:description" content="Private yacht charters along the Aegean and Mediterranean. 5 luxury gulets. Marmaris, Bodrum, Göcek, Bozburun.">
-
-  <!-- Structured Data (Google) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristInformationCenter",
-    "name": "Argentum Yachting",
-    "description": "Luxury private yacht charters in Turkey along the Aegean and Mediterranean coasts.",
-    "url": "https://www.argentumyachting.com",
-    "telephone": "+905393358280",
-    "email": "info@argentumyachting.com",
-    "sameAs": ["https://www.instagram.com/argentumyachting/"],
-    "areaServed": ["Marmaris", "Bodrum", "Göcek", "Bozburun"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "TR"
-    }
-  }
-  </script>
-
 </head>
 <body>
 
-<nav>
-  <a href="#" class="nav-logo"><img src="images/site/logo.webp" alt="Argentum Yachting" style="height:52px;width:auto;object-fit:contain;display:block"></a>
-  <ul class="nav-links">
-    <li><a href="#fleet" id="navFleet">Fleet</a></li>
-    <li><a href="#destinations" id="navDestinations">Destinations</a></li>
-    <li><a href="#services" id="navServices">Experiences</a></li>
-    <li><a href="#contact" id="navContact">Inquiry</a></li>
-  </ul>
-  <div style="display:flex;align-items:center;gap:12px">
-    <div class="lang-dropdown">
-      <button class="lang-current" id="langCurrent" onclick="toggleLangMenu()">EN</button>
-      <div class="lang-menu" id="langMenu">
-        <button class="lang-option active" onclick="setLang('en')">EN — English</button>
-        <button class="lang-option" onclick="setLang('tr')">TR — Türkçe</button>
-        <button class="lang-option" onclick="setLang('es')">ES — Español</button>
-        <button class="lang-option" onclick="setLang('it')">IT — Italiano</button>
-      </div>
-    </div>
-    <a href="#contact" class="nav-cta" id="navCta">Book Your Charter</a>
-  </div>
-</nav>
+<div id="toast"></div>
 
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <p class="hero-tag" id="heroTag">Luxury Yacht Charter — Turkey</p>
-    <h1 class="hero-title" id="heroTitle">Where silver seas<br>meet <em>golden</em><br>memories.</h1>
-    
-    <div class="hero-btns">
-      <a href="#fleet" class="btn-gold" id="exploreBtn">Explore Our Fleet</a>
-      <a href="#contact" class="btn-outline" id="planBtn">Plan a Charter</a>
-    </div>
+<div id="modal" class="hidden"><div id="modalBox">
+  <h3 id="mTitle"></h3>
+  <p id="mBody"></p>
+  <input id="mInput" class="hidden" autocomplete="off">
+  <div class="acts">
+    <button id="mCancel">Vazgeç</button>
+    <button id="mOk" class="btn-gold">Tamam</button>
   </div>
-  <div class="hero-stats">
-    <div><div class="hero-stat-num" id="statVal1" style="font-size:13px;letter-spacing:1px">Mediterranean</div><div class="hero-stat-label" id="statYachts">Based</div></div>
-    <div><div class="hero-stat-num" id="statVal2" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Tailored Weekly</div><div class="hero-stat-label" id="statPorts">Charters</div></div>
-    <div><div class="hero-stat-num" id="statVal3" style="font-size:11px;letter-spacing:0.5px;line-height:1.3">Crafted for</div><div class="hero-stat-label" id="statYears">Intimate Groups</div></div>
-  </div>
-</section>
+</div></div>
 
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span class="marquee-item">Marmaris</span><span class="marquee-item">Bodrum</span><span class="marquee-item">Göcek</span><span class="marquee-item">Bozburun</span><span class="marquee-item">Marmaris</span><span class="marquee-item">Bodrum</span><span class="marquee-item">Göcek</span><span class="marquee-item">Bozburun</span>
+<!-- ══════════════════ GİRİŞ ══════════════════ -->
+<div id="login" class="card">
+  <p class="tag" style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:0 0 8px">Argentum Yachting</p>
+  <h2>Yönetim Paneli</h2>
+  <p class="muted small" style="margin:8px 0 0">Devam etmek için erişim anahtarınızı girin. Anahtar yalnızca bu tarayıcıda saklanır, bir daha sorulmaz.</p>
+  <div class="field" style="margin-top:26px">
+    <label for="tok">Erişim anahtarı</label>
+    <input id="tok" type="password" placeholder="github_pat_..." autocomplete="off">
   </div>
+  <button class="btn-gold" id="loginBtn" style="width:100%">Giriş yap</button>
+  <p class="muted small" style="margin-top:18px;line-height:1.8">
+    Anahtarınız yoksa Gizem'den isteyin. Anahtarı kimseyle paylaşmayın.
+  </p>
 </div>
 
-<div class="intro">
-  <div class="intro-img"></div>
-  <div class="intro-content reveal">
-    <p class="section-tag" id="aboutTag">About Argentum</p>
-    <h2 id="aboutTitle">A different kind<br>of <em>charter</em> experience.</h2>
-    <p id="introP1">Argentum Yachting creates privately tailored yacht journeys along the Turkish Aegean and Mediterranean. From selecting the right yacht to shaping the route, onboard experience and every detail in between, each charter is planned around the people on board.</p>
-    <p id="introP2">Built on more than 15 years of family experience in yachting, our approach combines local knowledge with personal guidance before and throughout your journey.</p>
-    <p id="introQuote" style="font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:#888;margin-top:28px;line-height:1.6;border-left:2px solid #C9A84C;padding-left:16px;">Not merely a charter, but a quieter way to experience the sea.</p>
+<!-- ══════════════════ UYGULAMA ══════════════════ -->
+<div id="app" class="hidden">
+<header>
+  <div>
+    <div class="tag">Argentum Yachting</div>
+    <h1 id="hdTitle">Filo Yönetimi</h1>
   </div>
+  <div class="spacer"></div>
+  <button id="backBtn" class="hidden">← Listeye dön</button>
+  <button id="logoutBtn" class="btn-sm">Çıkış</button>
+</header>
+
+<main>
+  <!-- LİSTE -->
+  <section id="listView">
+    <div class="toolbar">
+      <input id="search" placeholder="Tekne ara…">
+      <span class="muted small" id="countLbl"></span>
+      <div class="spacer"></div>
+      <button class="btn-gold" id="newBtn">+ Yeni tekne</button>
+    </div>
+    <div class="ylist" id="ylist"></div>
+  </section>
+
+  <!-- DÜZENLEME -->
+  <section id="editView" class="hidden">
+    <div class="card" style="padding:26px 24px;margin-bottom:20px">
+      <h3 style="font-size:19px;margin-bottom:22px">Tekne bilgileri</h3>
+      <div class="row" style="grid-template-columns:2fr 1fr">
+        <div class="field"><label for="f_name">Tekne adı</label><input id="f_name"></div>
+        <div class="field"><label for="f_type">Tip</label>
+          <input id="f_type" list="typeList"><datalist id="typeList"></datalist></div>
+      </div>
+      <div class="row" style="grid-template-columns:repeat(4,1fr)">
+        <div class="field"><label for="f_base">Liman</label>
+          <input id="f_base" list="baseList"><datalist id="baseList"></datalist></div>
+        <div class="field"><label for="f_year">İnşa / Yenileme</label>
+          <input id="f_year" placeholder="2006 / 2019"></div>
+        <div class="field"><label for="f_length">Boy</label><input id="f_length" placeholder="24m"></div>
+        <div class="field"><label for="f_beam">Genişlik <span style="text-transform:none;letter-spacing:0">(isteğe bağlı)</span></label>
+          <input id="f_beam" placeholder="7m"></div>
+      </div>
+      <div class="row" style="grid-template-columns:repeat(3,1fr)">
+        <div class="field"><label for="f_guests">Misafir</label><input id="f_guests" placeholder="12"></div>
+        <div class="field"><label for="f_cabins">Kabin</label><input id="f_cabins" placeholder="6"></div>
+        <div class="field"><label for="f_crew">Mürettebat <span style="text-transform:none;letter-spacing:0">(boş bırakılırsa sitede görünmez)</span></label>
+          <input id="f_crew" placeholder="4"></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:26px 24px;margin-bottom:20px">
+      <h3 style="font-size:19px;margin-bottom:6px">Açıklamalar</h3>
+      <p class="muted small" style="margin:0 0 22px">
+        Yalnızca İngilizce zorunlu. Diğer diller boş bırakılırsa site o dillerde İngilizce metni gösterir.
+      </p>
+      <div class="field"><label for="d_en">İngilizce — zorunlu</label><textarea id="d_en"></textarea></div>
+      <div class="field"><label for="d_tr">Türkçe</label><textarea id="d_tr"></textarea></div>
+      <div class="field"><label for="d_es">İspanyolca</label><textarea id="d_es"></textarea></div>
+      <div class="field" style="margin-bottom:0"><label for="d_it">İtalyanca</label><textarea id="d_it"></textarea></div>
+    </div>
+
+    <div class="card" style="padding:26px 24px">
+      <h3 style="font-size:19px;margin-bottom:6px">Fotoğraflar</h3>
+      <p class="muted small" style="margin:0 0 22px">
+        İlk sıradaki fotoğraf kapak olarak kullanılır. Yüklediğiniz fotoğraflar otomatik küçültülür,
+        telefondan çektiğiniz haliyle atabilirsiniz.
+      </p>
+      <div class="pgrid" id="pgrid"></div>
+      <input type="file" id="fileIn" accept="image/*" multiple class="hidden">
+    </div>
+
+    <div style="display:flex;gap:12px;margin-top:24px">
+      <button class="btn-danger" id="delBtn">Bu tekneyi sil</button>
+      <div class="spacer"></div>
+      <button class="btn-gold" id="doneBtn">Tamam</button>
+    </div>
+  </section>
+</main>
+
+<div id="bar">
+  <span class="n" id="changeLbl">Bekleyen değişiklik yok</span>
+  <div class="spacer"></div>
+  <button id="resetBtn" disabled>Değişiklikleri geri al</button>
+  <button class="btn-gold" id="pubBtn" disabled>Yayınla</button>
+</div>
 </div>
 
-<section class="fleet" id="fleet">
-  <div class="fleet-header reveal">
-    <div>
-      <p class="section-tag" id="fleetTag" style="color:var(--gold)">Our Fleet</p>
-      <h2 id="fleetTitle" style="color:#fff">Forty-two exceptional<br><em>vessels.</em></h2>
-    </div>
-    <p id="fleetDesc">A carefully selected collection of gulets and yachts for private charter along the Turkish coast.</p>
-  </div>
-  <div class="fleet-grid" id="fleetGrid" style="display:flex;flex-direction:row;gap:2px"></div>
-</section>
-  <div style="text-align:center;padding:48px 0 64px;background:var(--black)">
-    <button onclick="openAllYachts()" id="viewAllBtn"
-      style="font-size:11px;letter-spacing:2px;text-transform:uppercase;
-             color:var(--gold);background:transparent;
-             border:1px solid var(--gold);padding:16px 40px;cursor:pointer;
-             transition:all 0.3s"
-      onmouseover="this.style.background='var(--gold)';this.style.color='var(--black)'"
-      onmouseout="this.style.background='transparent';this.style.color='var(--gold)'">
-      View All 42 Yachts →
-    </button>
-  </div>
-
-
-<section class="destinations" id="destinations">
-  <div class="dest-header reveal">
-    <p class="section-tag" id="destTag">Destinations</p>
-    <h2 id="destTitle">Four destinations.<br><em>Endless ways</em> to experience the sea.</h2>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;padding:0 2px 2px">
-
-    <!-- MARMARIS -->
-    <div onmouseenter="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(-60px)';s.style.opacity='1'"
-         onmouseleave="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(0)';s.style.opacity='0'"
-         style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#080d16;cursor:pointer">
-      <svg class="rsvg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;pointer-events:none" viewBox="0 0 200 300">
-        <path d="M100,220 Q80,180 65,150 Q55,120 75,85" fill="none" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
-        <circle cx="100" cy="220" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="65" cy="150" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="75" cy="85" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <text x="106" y="224" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Marmaris</text>
-        <text x="25" y="154" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Çiftlik Koyu</text>
-        <text x="35" y="80" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Kumlubük Koyu</text>
-      </svg>
-      <div class="nm" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 0.4s ease;z-index:2;pointer-events:none">
-        <p style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin:0 0 10px">01</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,26px);font-weight:400;color:#fff;text-align:center;margin:0" id="marmaris">Marmaris</h3>
-      </div>
-      <div style="position:absolute;bottom:28px;left:0;right:0;text-align:center;z-index:2;pointer-events:none">
-        <div style="width:24px;height:1px;background:#C9A84C;margin:0 auto 12px"></div>
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin:0;padding:0 16px" id="marmarisDesc">Gateway to the Blue Cruise</p>
-      </div>
-    </div>
-
-    <!-- GÖCEK -->
-    <div onmouseenter="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(-60px)';s.style.opacity='1'"
-         onmouseleave="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(0)';s.style.opacity='0'"
-         style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#080d16;cursor:pointer">
-      <svg class="rsvg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;pointer-events:none" viewBox="0 0 200 300">
-        <path d="M100,220 Q115,180 125,145 Q130,110 110,80" fill="none" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
-        <circle cx="100" cy="220" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="125" cy="145" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="110" cy="80" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <text x="72" y="224" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Göcek</text>
-        <text x="128" y="149" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Akvaryum Koyu</text>
-        <text x="60" y="76" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Bedri Rahmi Koyu</text>
-      </svg>
-      <div class="nm" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 0.4s ease;z-index:2;pointer-events:none">
-        <p style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin:0 0 10px">02</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,26px);font-weight:400;color:#fff;text-align:center;margin:0" id="gocek">Göcek</h3>
-      </div>
-      <div style="position:absolute;bottom:28px;left:0;right:0;text-align:center;z-index:2;pointer-events:none">
-        <div style="width:24px;height:1px;background:#C9A84C;margin:0 auto 12px"></div>
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin:0;padding:0 16px" id="gocekDesc">12 Islands, Endless Coves</p>
-      </div>
-    </div>
-
-    <!-- BODRUM -->
-    <div onmouseenter="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(-60px)';s.style.opacity='1'"
-         onmouseleave="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(0)';s.style.opacity='0'"
-         style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#080d16;cursor:pointer">
-      <svg class="rsvg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;pointer-events:none" viewBox="0 0 200 300">
-        <path d="M100,230 Q85,195 70,160 Q60,125 80,90" fill="none" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
-        <circle cx="100" cy="230" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="70" cy="160" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="80" cy="90" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <text x="104" y="234" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Bodrum</text>
-        <text x="25" y="164" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Torba Koyu</text>
-        <text x="30" y="86" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Kargı Koyu</text>
-      </svg>
-      <div class="nm" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 0.4s ease;z-index:2;pointer-events:none">
-        <p style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin:0 0 10px">03</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,26px);font-weight:400;color:#fff;text-align:center;margin:0" id="bodrum">Bodrum</h3>
-      </div>
-      <div style="position:absolute;bottom:28px;left:0;right:0;text-align:center;z-index:2;pointer-events:none">
-        <div style="width:24px;height:1px;background:#C9A84C;margin:0 auto 12px"></div>
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin:0;padding:0 16px" id="bodrumDesc">Vibrant Marina &amp; Ancient History</p>
-      </div>
-    </div>
-
-    <!-- BOZBURUN -->
-    <div onmouseenter="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(-60px)';s.style.opacity='1'"
-         onmouseleave="var t=this.querySelector('.nm');var s=this.querySelector('.rsvg');t.style.transform='translateY(0)';s.style.opacity='0'"
-         style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#080d16;cursor:pointer">
-      <svg class="rsvg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 0.5s;pointer-events:none" viewBox="0 0 200 300">
-        <path d="M100,225 Q118,188 130,155 Q138,120 120,85" fill="none" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
-        <circle cx="100" cy="225" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="130" cy="155" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="120" cy="85" r="2.5" fill="#C9A84C" opacity="0.8"/>
-        <text x="64" y="229" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Bozburun</text>
-        <text x="133" y="159" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Oğlanboğuldu K.</text>
-        <text x="60" y="81" font-size="7" fill="rgba(255,255,255,0.6)" font-family="Arial">Bozukkale Koyu</text>
-      </svg>
-      <div class="nm" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 0.4s ease;z-index:2;pointer-events:none">
-        <p style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin:0 0 10px">04</p>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(18px,2vw,26px);font-weight:400;color:#fff;text-align:center;margin:0" id="bozburun">Bozburun</h3>
-      </div>
-      <div style="position:absolute;bottom:28px;left:0;right:0;text-align:center;z-index:2;pointer-events:none">
-        <div style="width:24px;height:1px;background:#C9A84C;margin:0 auto 12px"></div>
-        <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin:0;padding:0 16px" id="bozburunDesc">Hidden Gem of the Aegean</p>
-      </div>
-    </div>
-
-      </div>
-</section>
-
-<section class="services" id="services">
-  <div class="services-header reveal">
-    <p class="section-tag" id="servicesTag">Experiences</p>
-    <h2 id="servicesTitle">Every detail,<br><em>thoughtfully considered.</em></h2>
-  </div>
-  <div class="services-grid">
-    <div class="service-card reveal"><div class="service-num">01</div><h3 class="service-title" id="s1title">Blue Voyage</h3><p class="service-desc" id="s1desc">Discover the Turkish coast through hidden bays, calm anchorages and carefully selected routes across the Aegean and Mediterranean.</p></div>
-    <div class="service-card reveal reveal-delay-1"><div class="service-num">02</div><h3 class="service-title" id="s2title">Tailored Charters</h3><p class="service-desc" id="s2desc">From the yacht you choose to the pace of your journey, each charter is shaped around your preferences, plans and way of travelling.</p></div>
-    <div class="service-card reveal reveal-delay-2"><div class="service-num">03</div><h3 class="service-title" id="s3title">Life on Board</h3><p class="service-desc" id="s3desc">Slow mornings, afternoons in the water and evenings beneath the stars — experience the simple rhythm of life at sea.</p></div>
-    <div class="service-card reveal"><div class="service-num">04</div><h3 class="service-title" id="s4title">Dining at Sea</h3><p class="service-desc" id="s4desc">Fresh Mediterranean ingredients and menus tailored to your preferences, prepared and served on board by your private chef.</p></div>
-    <div class="service-card reveal reveal-delay-1"><div class="service-num">05</div><h3 class="service-title" id="s5title">Celebrations &amp; Gatherings</h3><p class="service-desc" id="s5desc">From birthdays and intimate celebrations to private gatherings, special moments take on a different atmosphere at sea.</p></div>
-    <div class="service-card reveal reveal-delay-2"><div class="service-num">06</div><h3 class="service-title" id="s6title">Water &amp; Leisure</h3><p class="service-desc" id="s6desc">Swimming, paddleboarding, water activities or simply finding a quiet bay — spend each day on the water at your own pace.</p></div>
-  </div>
-</section>
-
-<div class="testimonial reveal">
-  <p class="testimonial-salutation" id="testimonialSalutation">Dear Buse;</p>
-  <blockquote id="testimonialText">&ldquo;We loved the experience. We hope to do it again another time. Thank you very much, and it was a pleasure meeting you.&rdquo;</blockquote>
-  <cite id="testimonialCite">— Natalia Capuz · Spain · Blue Cruise 2025</cite>
-</div>
-
-<section class="contact" id="contact">
-  <div class="contact-left reveal">
-    <div>
-      <p class="section-tag" id="contactTag" style="color:rgba(0,0,0,0.5)">Get in Touch</p>
-      <h2 id="contactTitle">How it <em>works.</em></h2>
-    </div>
-    <div class="steps" id="howSteps">
-      <div class="step"><span class="step-num">01</span><div><h4 id="hw1t">Tell us your plans</h4><p id="hw1d">Share your dates, group size and preferred destination.</p></div></div>
-      <div class="step"><span class="step-num">02</span><div><h4 id="hw2t">Discover your yacht</h4><p id="hw2d">We select suitable yachts based on your preferences.</p></div></div>
-      <div class="step"><span class="step-num">03</span><div><h4 id="hw3t">Shape your journey</h4><p id="hw3d">Together, we plan the route, dining and onboard details.</p></div></div>
-      <div class="step"><span class="step-num">04</span><div><h4 id="hw4t">Step aboard</h4><p id="hw4d">Your crew takes care of the rest.</p></div></div>
-    </div>
-  </div>
-  <div class="contact-right reveal">
-    <h3 id="planCharter">Your journey starts here.</h3>
-    <p id="planCharterSub" style="font-size:13px;line-height:1.7;color:rgba(0,0,0,0.6);margin:-8px 0 20px">Tell us what you have in mind, and we'll take it from there.</p>
-    <a href="https://wa.me/905393358280?text=Hello%2C%20I%20would%20like%20to%20get%20information%20about%20Argentum%20Yachting." class="btn-black" target="_blank" id="waBtn">WhatsApp Us</a>
-    <a href="mailto:info@argentumyachting.com" class="btn-border" id="emailBtn">Send an Email</a>
-    <div class="contact-info">Marmaris Marina, Muğla, Türkiye<br>info@argentumyachting.com<br>Marmaris · Bodrum · Göcek · Bozburun<br>www.argentumyachting.com</div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Argentum Yachting</p>
-  <a href="https://www.instagram.com/argentumyachting/" class="footer-credit" target="_blank" style="color:rgba(255,255,255,0.25);margin-right:24px">@argentumyachting</a><a href="https://www.instagram.com/gustodesign.co/" class="footer-credit" target="_blank">Designed by Gusto Design</a>
-</footer>
-
-<script>
-const reveals=document.querySelectorAll('.reveal');
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.08});
-reveals.forEach(el=>obs.observe(el));
-</script>
-
-
-
-<style>
-.detail-page{position:fixed;inset:0;background:#0C0C0C;z-index:500;overflow-y:auto;display:none;opacity:0;transition:opacity 0.4s}
-.detail-page.active{display:block}
-.detail-page.visible{opacity:1}
-.detail-back{position:fixed;top:24px;left:24px;z-index:600;display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.7);background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.15);padding:10px 20px;cursor:pointer;transition:all 0.3s;backdrop-filter:blur(8px)}
-.detail-back:hover{color:#fff;border-color:rgba(255,255,255,0.4)}
-.detail-back::before{content:'←';font-size:14px}
-
-/* SLIDER */
-.detail-slider{position:relative;height:80vh;overflow:hidden;background:#0a0a0a}
-@media(max-width:768px){.detail-slider{height:auto;aspect-ratio:4/3}}
-.slider-track{display:flex;height:100%;transition:transform 0.6s cubic-bezier(0.4,0,0.2,1)}
-.slider-slide{min-width:100%;height:100%;background-size:contain;background-position:center;background-repeat:no-repeat;flex-shrink:0;background-color:#0a0a0a}
-.slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.3s;backdrop-filter:blur(4px)}
-.slider-btn:hover{background:rgba(201,168,76,0.3);border-color:#C9A84C}
-.slider-prev{left:24px}
-.slider-next{right:24px}
-.slider-dots{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
-.slider-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.35);cursor:pointer;transition:all 0.3s}
-.slider-dot.active{background:#C9A84C;width:24px;border-radius:3px}
-.slider-counter{position:absolute;bottom:24px;right:24px;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.5)}
-
-/* DETAIL CONTENT */
-.detail-content{max-width:1100px;margin:0 auto;padding:72px 48px}
-.detail-header{display:grid;grid-template-columns:1fr auto;align-items:start;gap:40px;margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.detail-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin-bottom:16px;display:flex;align-items:center;gap:12px}
-.detail-tag::before{content:'';width:24px;height:1px;background:#C9A84C}
-.detail-name{font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,72px);font-weight:400;color:#fff;line-height:1.05;margin-bottom:8px}
-.detail-type{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.35)}
-.detail-year{font-size:12px;letter-spacing:2px;color:rgba(255,255,255,0.25);margin-top:8px}
-.detail-cta a{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;background:#C9A84C;color:#0C0C0C;text-decoration:none;padding:18px 36px;transition:opacity 0.3s;white-space:nowrap}
-.detail-cta a:hover{opacity:0.85}
-
-.detail-specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);margin-bottom:56px}
-.detail-specs[data-n="3"]{grid-template-columns:repeat(3,1fr)}
-.detail-specs[data-n="2"]{grid-template-columns:repeat(2,1fr)}
-.detail-note{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;line-height:1.75;color:#C9A84C;opacity:.9;max-width:680px;padding-left:30px;margin:0 0 56px}
-.detail-spec{background:#0C0C0C;padding:32px 28px}
-.detail-spec-val{font-family:'Playfair Display',serif;font-size:36px;color:#C9A84C;line-height:1}
-.detail-spec-key{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:8px}
-
-.detail-desc{font-size:16px;line-height:2;color:rgba(255,255,255,0.6);max-width:680px;border-left:2px solid #C9A84C;padding-left:28px;margin-bottom:56px}
-
-.detail-contact{display:flex;gap:16px;flex-wrap:wrap}
-.btn-detail-wa{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;background:#C9A84C;color:#0C0C0C;text-decoration:none;padding:18px 40px;transition:opacity 0.3s}
-.btn-detail-wa:hover{opacity:0.85}
-.btn-detail-mail{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:3px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.6);text-decoration:none;padding:18px 40px;transition:all 0.3s}
-.btn-detail-mail:hover{border-color:rgba(255,255,255,0.5);color:#fff}
-
-@media(max-width:768px){
-  .detail-content{padding:48px 20px}
-  .detail-header{grid-template-columns:1fr}
-  .detail-specs{grid-template-columns:repeat(2,1fr)!important}
-  .detail-note{font-size:14px;padding-left:22px;margin-bottom:40px}
-  .slider-btn{width:40px;height:40px;font-size:14px}
-}
-</style>
-
-
-<div class="all-yachts-page" id="allYachtsPage" style="display:none;position:fixed;inset:0;z-index:150;
-     background:var(--black);overflow-y:auto;overflow-x:hidden">
-  
-  <!-- Header -->
-  <div style="position:sticky;top:0;z-index:10;background:rgba(12,12,12,0.95);backdrop-filter:blur(12px);
-              padding:0 48px;height:72px;display:flex;align-items:center;justify-content:space-between;
-              border-bottom:1px solid rgba(255,255,255,0.06)">
-    <div>
-      <p style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:2px" id="allYachtsTag">Our Fleet</p>
-      <h2 style="font-family:'Playfair Display',serif;font-size:22px;color:#fff;font-weight:400" id="allYachtsTitle">All 42 Yachts</h2>
-    </div>
-    <button onclick="closeAllYachts()" id="closeAllBtn"
-      style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);
-             background:transparent;border:1px solid rgba(255,255,255,0.15);padding:10px 24px;cursor:pointer;
-             transition:all 0.3s"
-      onmouseover="this.style.borderColor='rgba(255,255,255,0.5)';this.style.color='#fff'"
-      onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.color='rgba(255,255,255,0.5)'">
-      ← Back
-    </button>
-  </div>
-  
-  <!-- Grid -->
-  <div id="ayFilters" style="padding:20px 24px 4px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
-    <select id="fBase" onchange="renderAllYachts()" class="ay-filter"></select>
-    <select id="fGuests" onchange="renderAllYachts()" class="ay-filter"></select>
-    <select id="fType" onchange="renderAllYachts()" class="ay-filter"></select>
-    <button id="fReset" onclick="resetFilters()" class="ay-filter-reset">Reset</button>
-    <span id="fCount" style="margin-left:auto;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.35)"></span>
-  </div>
-
-  <div style="padding:16px 12px" id="allYachtsGrid" class="ay-grid"></div>
-</div>
-<div class="detail-page" id="detailPage">
-  <button class="detail-back" id="allYachtsBtn" onclick="closeDetail()">All Yachts</button>
-  
-  <div class="detail-slider" id="detailSlider">
-    <div class="slider-track" id="sliderTrack"></div>
-    <button class="slider-btn slider-prev" onclick="slideMove(-1)">‹</button>
-    <button class="slider-btn slider-next" onclick="slideMove(1)">›</button>
-    <div class="slider-dots" id="sliderDots"></div>
-    <div class="slider-counter" id="sliderCounter"></div>
-  </div>
-
-  <div class="detail-content">
-    <div class="detail-header">
-      <div>
-        <p class="detail-tag">Argentum Yachting</p>
-        <h1 class="detail-name" id="detailName"></h1>
-        <p class="detail-type" id="detailType"></p>
-        <p class="detail-year" id="detailYear"></p>
-      </div>
-      
-    </div>
-    
-    <div class="detail-specs" id="detailSpecs"></div>
-    
-    <p class="detail-desc" id="detailDesc"></p>
-    <p class="detail-note" id="detailNote"></p>
-    
-    <div class="detail-contact">
-      <a href="https://wa.me/905393358280" class="btn-detail-wa" id="waBtnDetail" target="_blank">WhatsApp Booking</a>
-      <a href="mailto:info@argentumyachting.com" class="btn-detail-mail">info@argentumyachting.com</a>
-    </div>
-  </div>
+<div id="progress" class="hidden">
+  <div class="lbl" id="progLbl">Hazırlanıyor…</div>
+  <div class="pbar"><div id="progBar"></div></div>
 </div>
 
 <script>
-const IMG_BASE = "images/";
+/* ══════════════════════════════════════════════════════════════
+   Argentum Yachting — yönetim paneli
+   Sunucu yok. Veri GitHub'da, yayın Netlify'da.
+   Tüm değişiklikler tek commit olarak gider → tek deploy.
+   ══════════════════════════════════════════════════════════════ */
 
-let yachtInfo = [];
+const REPO   = { owner: 'gustodesign', name: 'argentum-yachting', branch: 'main' };
+const DATA   = 'data/yachts.json';
+const IMGDIR = 'images';
+const BIG    = { w: 1600, q: 0.80, max: 260 * 1024 };
+const SMALL  = { w: 600,  q: 0.74, max: 90  * 1024 };
 
-let currentSlide = 0;
-let totalSlides = 0;
-
-
-/* ---------------- Argentum render engine ---------------- */
-const SPEC_L = {
-  en:{length:'Length',beam:'Beam',guests:'Guests',cabins:'Cabins',crew:'Crew',base:'Base Port',
-      allBase:'All ports',allGuests:'Any capacity',allType:'All types',reset:'Reset',
-      upTo:'up to',shown:'yachts',none:'No yachts match these filters.',built:'Built / Refit: '},
-  tr:{length:'Uzunluk',beam:'Genişlik',guests:'Misafir',cabins:'Kabin',crew:'Mürettebat',base:'Liman',
-      allBase:'Tüm limanlar',allGuests:'Tüm kapasiteler',allType:'Tüm tipler',reset:'Sıfırla',
-      upTo:'en fazla',shown:'tekne',none:'Bu filtrelere uygun tekne bulunamadı.',built:'İnşa / Yenileme: '},
-  es:{length:'Eslora',beam:'Manga',guests:'Huéspedes',cabins:'Cabinas',crew:'Tripulación',base:'Puerto base',
-      allBase:'Todos los puertos',allGuests:'Cualquier capacidad',allType:'Todos los tipos',reset:'Restablecer',
-      upTo:'hasta',shown:'yates',none:'Ningún yate coincide con estos filtros.',built:'Construcción / Reforma: '},
-  it:{length:'Lunghezza',beam:'Larghezza',guests:'Ospiti',cabins:'Cabine',crew:'Equipaggio',base:'Porto base',
-      allBase:'Tutti i porti',allGuests:'Qualsiasi capacità',allType:'Tutti i tipi',reset:'Reimposta',
-      upTo:'fino a',shown:'yacht',none:'Nessuno yacht corrisponde a questi filtri.',built:'Costruzione / Rinnovo: '}
-};
-const TYPE_L = {
-  en:{'Gulet':'Gulet','Classic Gulet':'Classic Gulet','Luxury Gulet':'Luxury Gulet','Ketch':'Ketch','Trawler':'Trawler','Motor Yacht':'Motor Yacht'},
-  tr:{'Gulet':'Gulet','Classic Gulet':'Klasik Gulet','Luxury Gulet':'Lüks Gulet','Ketch':'Ketch','Trawler':'Trawler','Motor Yacht':'Motoryat'},
-  es:{'Gulet':'Gulet','Classic Gulet':'Gulet Clásico','Luxury Gulet':'Gulet de Lujo','Ketch':'Queche','Trawler':'Trawler','Motor Yacht':'Yate a Motor'},
-  it:{'Gulet':'Gulet','Classic Gulet':'Gulet Classico','Luxury Gulet':'Gulet di Lusso','Ketch':'Ketch','Trawler':'Trawler','Motor Yacht':'Motoryacht'}
-};
-function L(){ return SPEC_L[currentLang] || SPEC_L.en; }
-function typeLabel(t){ const m = TYPE_L[currentLang] || TYPE_L.en; return m[t] || t; }
-function byId(id){ return yachtInfo.find(y => y.id === id); }
-function photoSrc(y, i, small){ return IMG_BASE + y.id + '/' + String(i+1).padStart(2,'0') + (small ? '-s' : '') + '.webp'; }
-function maxGuests(y){ return parseInt(String(y.guests).split('-').pop(), 10) || 0; }
-
-/* ---- Homepage featured strip (first 5) ---- */
-function renderFleet(){
-  const el = document.getElementById('fleetGrid');
-  if(!el) return;
-  const l = L();
-  el.innerHTML = yachtInfo.slice(0,5).map((y,i) => `
-    <div class="yacht-card reveal visible" onclick="openYacht('${y.id}')" style="cursor:pointer">
-      <div class="yacht-bg" style="background-image:url('${photoSrc(y,0,false)}')"></div>
-      <div class="yacht-overlay"></div>
-      <div class="yacht-info">
-        <p class="yacht-num">${String(i+1).padStart(2,'0')} / ${yachtInfo.length}</p>
-        <h3 class="yacht-name">${y.name}</h3>
-        <p class="yacht-type">${typeLabel(y.type)} · ${y.length}</p>
-        <div class="yacht-specs">
-          <div><div class="spec-val">${y.guests}</div><div class="spec-key">${l.guests}</div></div>
-          <div><div class="spec-val">${y.cabins}</div><div class="spec-key">${l.cabins}</div></div>
-          <div><div class="spec-val">${y.base}</div><div class="spec-key">${l.base}</div></div>
-        </div>
-      </div>
-    </div>`).join('');
-}
-
-/* ---- Filters ---- */
-const GUEST_BANDS = [6,8,10,12,16,99];
-function buildFilters(){
-  const l = L();
-  const keep = {base:document.getElementById('fBase').value, g:document.getElementById('fGuests').value, t:document.getElementById('fType').value};
-  const bases = [...new Set(yachtInfo.map(y=>y.base))].sort();
-  const types = [...new Set(yachtInfo.map(y=>y.type))].sort();
-  document.getElementById('fBase').innerHTML =
-    `<option value="">${l.allBase}</option>` + bases.map(b=>`<option value="${b}">${b}</option>`).join('');
-  document.getElementById('fGuests').innerHTML =
-    `<option value="">${l.allGuests}</option>` + GUEST_BANDS.map(g=>
-      `<option value="${g}">${g===99 ? '16+ ' + l.guests.toLowerCase() : g + ' ' + l.guests.toLowerCase()}</option>`).join('');
-  document.getElementById('fType').innerHTML =
-    `<option value="">${l.allType}</option>` + types.map(t=>`<option value="${t}">${typeLabel(t)}</option>`).join('');
-  document.getElementById('fBase').value = keep.base || '';
-  document.getElementById('fGuests').value = keep.g || '';
-  document.getElementById('fType').value = keep.t || '';
-  document.getElementById('fReset').textContent = l.reset;
-}
-function resetFilters(){
-  ['fBase','fGuests','fType'].forEach(id => document.getElementById(id).value = '');
-  renderAllYachts();
-}
-function filtered(){
-  const b = document.getElementById('fBase').value;
-  const g = document.getElementById('fGuests').value;
-  const t = document.getElementById('fType').value;
-  return yachtInfo.filter(y => {
-    if(b && y.base !== b) return false;
-    if(t && y.type !== t) return false;
-    if(g){ const n = maxGuests(y); return g === '99' ? n >= 16 : n >= parseInt(g,10); }
-    return true;
-  });
-}
-
-/* ---- All-yachts grid ---- */
-function renderAllYachts(){
-  const el = document.getElementById('allYachtsGrid');
-  if(!el) return;
-  const l = L();
-  const list = filtered();
-  document.getElementById('fCount').textContent = list.length + ' ' + l.shown;
-  if(!list.length){ el.innerHTML = `<div class="ay-empty">${l.none}</div>`; return; }
-  el.innerHTML = list.map((y,i) => `
-    <div class="ay-card ay-card-item" onclick="openYacht('${y.id}')">
-      <div class="ay-bg" style="background-image:url('${photoSrc(y,0,true)}')"></div>
-      <div class="ay-grad"></div>
-      <div class="ay-num">${String(i+1).padStart(2,'0')} / ${list.length}</div>
-      <div class="ay-info">
-        <h3 class="ay-name">${y.name}</h3>
-        <p class="ay-meta">${typeLabel(y.type)} · ${y.length} · ${y.base}</p>
-        <div class="ay-specs">
-          <div><div class="ay-spec-v">${y.guests}</div><div class="ay-spec-k">${l.guests}</div></div>
-          <div><div class="ay-spec-v">${y.cabins}</div><div class="ay-spec-k">${l.cabins}</div></div>
-          ${y.crew ? `<div><div class="ay-spec-v">${y.crew}</div><div class="ay-spec-k">${l.crew}</div></div>` : ''}
-        </div>
-      </div>
-    </div>`).join('');
-  lazyBind(el);
-}
-
-/* ---- Lazy background loading ---- */
-let lazyObs = null;
-function lazyBind(scope){
-  const cards = scope.querySelectorAll('.ay-bg[style*="background-image"]');
-  if(!('IntersectionObserver' in window)) return;
-  if(!lazyObs){
-    lazyObs = new IntersectionObserver(es => es.forEach(e => {
-      if(e.isIntersecting){ e.target.style.opacity = '1'; lazyObs.unobserve(e.target); }
-    }), {rootMargin:'300px'});
-  }
-  cards.forEach((c,i) => { if(i > 5){ c.style.opacity = '0'; c.style.transition = 'opacity .5s ease, transform .5s ease'; lazyObs.observe(c); } });
-}
-
-function openYacht(id) {
-  const yacht = byId(id);
-  if(!yacht) return;
-  const l = L();
-  document.getElementById('detailName').textContent = yacht.name;
-  document.getElementById('detailType').textContent = typeLabel(yacht.type) + ' · ' + yacht.base;
-  document.getElementById('detailYear').textContent = (yacht.year && yacht.year !== '—') ? l.built + yacht.year : '';
-  const full = (yacht.descriptions && (yacht.descriptions[currentLang] || yacht.descriptions.en)) || '';
-  const NOTE_RES = [
-    /\s*Alternative embarkation points may be arranged[^.]*\.\s*$/,
-    /\s*Tercih etti\u011finiz g\u00fczergaha g\u00f6re alternatif bini\u015f noktalar\u0131 ayarlanabilir\.\s*$/,
-    /\s*Se pueden organizar puntos de embarque alternativos[^.]*\.\s*$/,
-    /\s*\u00c8 possibile concordare punti di imbarco alternativi[^.]*\.\s*$/
-  ];
-  let body = full, note = '';
-  for(const re of NOTE_RES){
-    const m = full.match(re);
-    if(m){ note = m[0].trim(); body = full.replace(re, '').trim(); break; }
-  }
-  const descEl = document.getElementById('detailDesc');
-  const noteEl = document.getElementById('detailNote');
-  descEl.textContent = body;
-  noteEl.textContent = note;
-  noteEl.style.display = note ? '' : 'none';
-  descEl.style.marginBottom = note ? '28px' : '';
-
-  const specs = [[yacht.length, l.length], [yacht.guests, l.guests], [yacht.cabins, l.cabins]];
-  if(yacht.crew) specs.push([yacht.crew, l.crew]);
-  else if(yacht.beam) specs.push([yacht.beam, l.beam]);
-  const specsEl = document.getElementById('detailSpecs');
-  specsEl.setAttribute('data-n', specs.length);
-  specsEl.innerHTML = specs.map(
-    s => `<div class="detail-spec"><div class="detail-spec-val">${s[0]}</div><div class="detail-spec-key">${s[1]}</div></div>`).join('');
-
-  const track = document.getElementById('sliderTrack');
-  const dots  = document.getElementById('sliderDots');
-  track.innerHTML = ''; dots.innerHTML = '';
-  totalSlides = yacht.n; currentSlide = 0;
-  for(let i = 0; i < yacht.n; i++){
-    const slide = document.createElement('div');
-    slide.className = 'slider-slide';
-    slide.dataset.src = photoSrc(yacht, i, false);
-    if(i < 2) slide.style.backgroundImage = `url('${slide.dataset.src}')`;
-    track.appendChild(slide);
-    const dot = document.createElement('div');
-    dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
-    dot.onclick = () => goToSlide(i);
-    dots.appendChild(dot);
-  }
-  updateSlider();
-
-  const page = document.getElementById('detailPage');
-  page.style.display = 'block'; page.scrollTop = 0;
-  document.body.style.overflow = 'hidden';
-  setTimeout(() => page.classList.add('visible'), 10);
-  const t2 = translations[currentLang];
-  if(t2){ apply('allYachtsBtn', t2.allYachts); apply('waBtnDetail', t2.waBooking); }
-  const WA_MSG = {
-    en: n => `Hello, I would like to get information about ${n} — Argentum Yachting.`,
-    tr: n => `Merhaba, ${n} hakkında bilgi almak istiyorum — Argentum Yachting.`,
-    es: n => `Hola, me gustaría recibir información sobre ${n} — Argentum Yachting.`,
-    it: n => `Salve, vorrei ricevere informazioni su ${n} — Argentum Yachting.`
-  };
-  const waEl = document.getElementById('waBtnDetail');
-  if(waEl){
-    const build = WA_MSG[currentLang] || WA_MSG.en;
-    waEl.href = 'https://wa.me/905393358280?text=' + encodeURIComponent(build(yacht.name));
-  }
-}
-
-function closeDetail() {
-  const page = document.getElementById('detailPage');
-  page.classList.remove('visible');
-  setTimeout(() => {
-    page.style.display = 'none';
-    document.body.style.overflow = '';
-  }, 400);
-}
-
-function openAllYachts() {
-  if(!yachtInfo.length) return;
-  const page = document.getElementById('allYachtsPage');
-  buildFilters();
-  renderAllYachts();
-  page.style.display = 'block';
-  page.scrollTop = 0;
-  document.body.style.overflow = 'hidden';
-  setTimeout(() => page.style.opacity = '1', 10);
-  
-  // Hover effect for all yacht cards
-  document.querySelectorAll('.ay-card').forEach(function(card) {
-    card.addEventListener('mouseenter', function() {
-      const bg = this.querySelector('.ay-bg');
-      if(bg) bg.style.transform = 'scale(1.06)';
-    });
-    card.addEventListener('mouseleave', function() {
-      const bg = this.querySelector('.ay-bg');
-      if(bg) bg.style.transform = 'scale(1)';
-    });
-  });
-}
-
-function closeAllYachts() {
-  const page = document.getElementById('allYachtsPage');
-  page.style.display = 'none';
-  document.body.style.overflow = '';
-}
-
-
-function slideMove(dir) {
-  currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
-  updateSlider();
-}
-
-function goToSlide(i) {
-  currentSlide = i;
-  updateSlider();
-}
-
-
-function updateSlider() {
-  const track = document.getElementById('sliderTrack');
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
-  document.getElementById('sliderCounter').textContent = `${currentSlide + 1} / ${totalSlides}`;
-  const slides = track.children;
-  for(let k = currentSlide - 1; k <= currentSlide + 1; k++){
-    const s = slides[(k + totalSlides) % totalSlides];
-    if(s && !s.style.backgroundImage) s.style.backgroundImage = `url('${s.dataset.src}')`;
-  }
-  document.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
-}
-
-document.addEventListener('keydown', e => {
-  if (!document.getElementById('detailPage').classList.contains('visible')) return;
-  if (e.key === 'Escape') closeDetail();
-  if (e.key === 'ArrowLeft') slideMove(-1);
-  if (e.key === 'ArrowRight') slideMove(1);
-});
-</script>
-
-
-
-
-
-<script>
-
-const navTranslations = {"en": {"fleet": "Fleet", "destinations": "Destinations", "services": "Services", "contact": "Contact"}, "tr": {"fleet": "Filo", "destinations": "Güzergahlar", "services": "Hizmetler", "contact": "İletişim"}, "es": {"fleet": "Flota", "destinations": "Destinos", "services": "Servicios", "contact": "Contacto"}, "it": {"fleet": "Flotta", "destinations": "Destinazioni", "services": "Servizi", "contact": "Contatti"}};
-
-const translations = {"en": {"heroTag": "Luxury Yacht Charter — Turkey", "heroTitle": "Where silver seas<br>meet <em>golden</em><br>memories.", "heroDesc": "", "exploreBtn": "Explore Our Fleet", "planBtn": "Plan a Charter", "charterBtn": "Book Your Charter", "aboutTag": "About Argentum", "aboutTitle": "A different kind<br>of <em>charter</em> experience.", "aboutP1": "Argentum Yachting creates privately tailored yacht journeys along the Turkish Aegean and Mediterranean. From selecting the right yacht to shaping the route, onboard experience and every detail in between, each charter is planned around the people on board.", "aboutP2": "Built on more than 15 years of family experience in yachting, our approach combines local knowledge with personal guidance before and throughout your journey.", "fleetTag": "Our Fleet", "fleetTitle": "Forty-two exceptional<br><em>vessels.</em>", "fleetDesc": "A carefully selected collection of gulets and yachts for private charter along the Turkish coast.", "destTag": "Destinations", "destTitle": "Four destinations.<br><em>Endless ways</em> to experience the sea.", "marmaris": "Gateway to the Blue Cruise", "gocek": "12 islands, endless coves", "bodrum": "Vibrant marina & ancient history", "bozburun": "Hidden gem of the Aegean", "servicesTag": "Services", "servicesTitle": "Everything you need,<br><em>nothing you don't.</em>", "testimonial": "\u201cWe loved the experience. We hope to do it again another time. Thank you very much, and it was a pleasure meeting you.\u201d", "testimonialSalutation": "Dear Buse;", "testimonialCite": "\u2014 Natalia Capuz \u00b7 Spain \u00b7 Blue Cruise 2025", "contactTag": "Get in Touch", "contactTitle": "Ready to set <em>sail?</em>", "contactDesc": "Contact us to plan your perfect charter experience. We respond within 24 hours.", "planCharter": "Plan your charter", "waBtn": "WhatsApp Us", "emailBtn": "Send an Email", "instaBtn": "Instagram", "allYachts": "All Yachts", "waBooking": "WhatsApp Booking", "availableBadge": "Available 2026", "s1title": "Blue Voyage", "s1desc": "Discover the Turkish coast through hidden bays, calm anchorages and carefully selected routes across the Aegean and Mediterranean.", "s2title": "Tailored Charters", "s2desc": "From the yacht you choose to the pace of your journey, each charter is shaped around your preferences, plans and way of travelling.", "s3title": "Life on Board", "s3desc": "Slow mornings, afternoons in the water and evenings beneath the stars — experience the simple rhythm of life at sea.", "s4title": "Dining at Sea", "s4desc": "Fresh Mediterranean ingredients and menus tailored to your preferences, prepared and served on board by your private chef.", "s5title": "Celebrations & Gatherings", "s5desc": "From birthdays and intimate celebrations to private gatherings, special moments take on a different atmosphere at sea.", "s6title": "Water & Leisure", "s6desc": "Swimming, paddleboarding, water activities or simply finding a quiet bay — spend each day on the water at your own pace.", "introP1": "Argentum Yachting creates privately tailored yacht journeys along the Turkish Aegean and Mediterranean. From selecting the right yacht to shaping the route, onboard experience and every detail in between, each charter is planned around the people on board.", "introP2": "Built on more than 15 years of family experience in yachting, our approach combines local knowledge with personal guidance before and throughout your journey."}, "tr": {"heroTag": "Lüks Yat Kiralama — Türkiye", "heroTitle": "Gümüş denizlerin<br><em>altın</em> anılarla<br>buluştuğu yer.", "heroDesc": "Ege ve Akdeniz'in en muhteşem kıyıları boyunca özel yat turları. Tam mürettebatlı. Tam organize.", "exploreBtn": "Filomuz", "planBtn": "Rezervasyon Yap", "charterBtn": "Rezervasyon Yap", "aboutTag": "Hakkımızda", "aboutTitle": "Farklı bir<br><em>kiralama</em> deneyimi.", "aboutP1": "Argentum Yachting, Türkiye'nin Ege ve Akdeniz kıyılarında size özel tasarlanmış yat yolculukları hazırlar. Doğru tekneyi seçmekten rotayı, tekne içi deneyimi ve arasındaki her detayı şekillendirmeye kadar her kiralama, teknedeki insanlara göre planlanır.", "aboutP2": "15 yılı aşkın aile yatçılığı deneyimi üzerine kurulu yaklaşımımız, yerel bilgiyi yolculuğunuz öncesinde ve boyunca kişisel rehberlikle birleştirir.", "fleetTag": "Filomuz", "fleetTitle": "Kırk iki olağanüstü<br><em>tekne.</em>", "fleetDesc": "Türk kıyılarında özel kiralama için özenle seçilmiş gulet ve yat koleksiyonu.", "destTag": "Güzergahlar", "destTitle": "Dört destinasyon.<br>Denizi yaşamanın <em>sonsuz yolu.</em>", "marmaris": "Mavi Yolculuğun kapısı", "gocek": "12 ada, sonsuz koylar", "bodrum": "Canlı marina & antik tarih", "bozburun": "Ege'nin saklı cevheri", "servicesTag": "Hizmetlerimiz", "servicesTitle": "İhtiyacınız olan her şey,<br><em>fazlası yok.</em>", "testimonial": "\u201cDeneyimi \u00e7ok sevdik. Bir ba\u015fka sefer tekrarlamay\u0131 umuyoruz. \u00c7ok te\u015fekk\u00fcr ederiz, tan\u0131\u015fmak bir zevkti.\u201d", "testimonialSalutation": "Sevgili Buse;", "testimonialCite": "\u2014 Natalia Capuz \u00b7 \u0130spanya \u00b7 Mavi Yolculuk 2025", "contactTag": "İletişim", "contactTitle": "Yelken açmaya <em>hazır mısınız?</em>", "contactDesc": "Mükemmel yat tatili planlamak için bize ulaşın. 24 saat içinde yanıt veriyoruz.", "planCharter": "Rezervasyonunuzu planlayın", "waBtn": "WhatsApp'tan Ulaşın", "emailBtn": "E-posta Gönderin", "instaBtn": "Instagram", "allYachts": "Tüm Tekneler", "waBooking": "WhatsApp Rezervasyon", "availableBadge": "2026'da Müsait", "s1title": "Mavi Yolculuk", "s1desc": "Ege ve Akdeniz boyunca saklı koylar, sakin demir yerleri ve özenle seçilmiş rotalarla Türk kıyılarını keşfedin.", "s2title": "Size Özel Kiralama", "s2desc": "Seçtiğiniz tekneden yolculuğunuzun temposuna kadar her kiralama, tercihlerinize, planlarınıza ve seyahat tarzınıza göre şekillenir.", "s3title": "Teknede Yaşam", "s3desc": "Yavaş sabahlar, suda geçen öğleden sonraları ve yıldızların altında akşamlar — denizde hayatın sade ritmini yaşayın.", "s4title": "Denizde Lezzet", "s4desc": "Taze Akdeniz malzemeleri ve tercihlerinize göre hazırlanan menüler, özel şefiniz tarafından teknede pişirilip servis edilir.", "s5title": "Kutlamalar & Buluşmalar", "s5desc": "Doğum günlerinden samimi kutlamalara, özel buluşmalara kadar; özel anlar denizde bambaşka bir atmosfere bürünür.", "s6title": "Su & Dinlence", "s6desc": "Yüzmek, paddleboard yapmak, su aktiviteleri ya da sadece sakin bir koy bulmak — her gününüzü kendi temponuzda suda geçirin.", "introP1": "Argentum Yachting, Türkiye'nin Ege ve Akdeniz kıyılarında size özel tasarlanmış yat yolculukları hazırlar. Doğru tekneyi seçmekten rotayı, tekne içi deneyimi ve arasındaki her detayı şekillendirmeye kadar her kiralama, teknedeki insanlara göre planlanır.", "introP2": "15 yılı aşkın aile yatçılığı deneyimi üzerine kurulu yaklaşımımız, yerel bilgiyi yolculuğunuz öncesinde ve boyunca kişisel rehberlikle birleştirir."}, "es": {"heroTag": "Charter de Yate de Lujo — Turquía", "heroTitle": "Donde los mares de plata<br>se encuentran con <em>memorias</em><br>doradas.", "heroDesc": "Charters privados de yate por las costas más espectaculares del Egeo y el Mediterráneo. Tripulación completa. Curación completa.", "exploreBtn": "Nuestra Flota", "planBtn": "Planificar Charter", "charterBtn": "Reserve su Charter", "aboutTag": "Sobre Argentum", "aboutTitle": "Una <em>experiencia</em> de<br>charter diferente.", "aboutP1": "Argentum Yachting crea viajes en yate diseñados a medida por el Egeo y el Mediterráneo turcos. Desde la elección del yate adecuado hasta la definición de la ruta, la experiencia a bordo y cada detalle intermedio, cada charter se planifica en torno a quienes viajan a bordo.", "aboutP2": "Con más de 15 años de experiencia familiar en el mundo náutico, nuestro enfoque combina el conocimiento local con un acompañamiento personal antes y durante todo el viaje.", "fleetTag": "Nuestra Flota", "fleetTitle": "Cuarenta y dos embarcaciones<br><em>excepcionales.</em>", "fleetDesc": "Una colección cuidadosamente seleccionada de gulets y yates para charter privado en la costa turca.", "destTag": "Destinos", "destTitle": "Cuatro destinos.<br><em>Infinitas formas</em> de vivir el mar.", "marmaris": "Puerta al Crucero Azul", "gocek": "12 islas, calas infinitas", "bodrum": "Marina vibrante e historia antigua", "bozburun": "Joya oculta del Egeo", "servicesTag": "Servicios", "servicesTitle": "Todo lo que necesitas,<br><em>nada más.</em>", "testimonial": "\u201cNos encant\u00f3 la experiencia. Esperamos repetirla en otra ocasi\u00f3n. Muchas gracias, fue un placer conocerlos.\u201d", "testimonialSalutation": "Querida Buse;", "testimonialCite": "\u2014 Natalia Capuz \u00b7 Espa\u00f1a \u00b7 Crucero Azul 2025", "contactTag": "Contacto", "contactTitle": "¿Listo para <em>zarpar?</em>", "contactDesc": "Contáctenos para planificar su experiencia de charter perfecta. Respondemos en 24 horas.", "planCharter": "Planifique su charter", "waBtn": "WhatsApp", "emailBtn": "Enviar Email", "instaBtn": "Instagram", "allYachts": "Todos los Yates", "waBooking": "Reserva por WhatsApp", "availableBadge": "Disponible 2026", "s1title": "Crucero Azul", "s1desc": "Descubra la costa turca a través de calas escondidas, fondeaderos tranquilos y rutas cuidadosamente seleccionadas por el Egeo y el Mediterráneo.", "s2title": "Charters a Medida", "s2desc": "Desde el yate que elija hasta el ritmo de su viaje, cada charter se adapta a sus preferencias, planes y forma de viajar.", "s3title": "Vida a Bordo", "s3desc": "Mañanas tranquilas, tardes en el agua y noches bajo las estrellas: viva el ritmo sencillo de la vida en el mar.", "s4title": "Gastronomía en el Mar", "s4desc": "Ingredientes mediterráneos frescos y menús adaptados a sus preferencias, preparados y servidos a bordo por su chef privado.", "s5title": "Celebraciones y Encuentros", "s5desc": "Desde cumpleaños y celebraciones íntimas hasta encuentros privados, los momentos especiales cobran otra atmósfera en el mar.", "s6title": "Agua y Ocio", "s6desc": "Nadar, hacer paddleboard, actividades acuáticas o simplemente encontrar una cala tranquila: viva cada día en el agua a su propio ritmo.", "introP1": "Argentum Yachting crea viajes en yate diseñados a medida por el Egeo y el Mediterráneo turcos. Desde la elección del yate adecuado hasta la definición de la ruta, la experiencia a bordo y cada detalle intermedio, cada charter se planifica en torno a quienes viajan a bordo.", "introP2": "Con más de 15 años de experiencia familiar en el mundo náutico, nuestro enfoque combina el conocimiento local con un acompañamiento personal antes y durante todo el viaje."}, "it": {"heroTag": "Charter di Lusso — Turchia", "heroTitle": "Dove i mari d'argento<br>incontrano <em>ricordi</em><br>d'oro.", "heroDesc": "Charter privati lungo le coste più spettacolari dell'Egeo e del Mediterraneo. Equipaggio completo. Completamente curato.", "exploreBtn": "La Nostra Flotta", "planBtn": "Pianifica Charter", "charterBtn": "Prenota il Charter", "aboutTag": "Chi Siamo", "aboutTitle": "Un'<em>esperienza</em> di<br>charter diversa.", "aboutP1": "Argentum Yachting crea viaggi in yacht su misura lungo l'Egeo e il Mediterraneo turchi. Dalla scelta dello yacht giusto alla definizione della rotta, dell'esperienza a bordo e di ogni dettaglio intermedio, ogni charter è pensato attorno alle persone a bordo.", "aboutP2": "Costruito su oltre 15 anni di esperienza familiare nella nautica, il nostro approccio unisce la conoscenza del territorio a una guida personale prima e durante tutto il viaggio.", "fleetTag": "La Nostra Flotta", "fleetTitle": "Quarantadue imbarcazioni<br><em>eccezionali.</em>", "fleetDesc": "Una collezione accuratamente selezionata di gulet e yacht per charter privati lungo la costa turca.", "destTag": "Destinazioni", "destTitle": "Quattro destinazioni.<br><em>Infiniti modi</em> di vivere il mare.", "marmaris": "Porta alla Crociera Blu", "gocek": "12 isole, calette infinite", "bodrum": "Marina vivace e storia antica", "bozburun": "Gemma nascosta dell'Egeo", "servicesTag": "Servizi", "servicesTitle": "Tutto ciò di cui hai bisogno,<br><em>niente di più.</em>", "testimonial": "\u201cAbbiamo adorato l\u2019esperienza. Speriamo di ripeterla un\u2019altra volta. Grazie mille, \u00e8 stato un piacere conoscervi.\u201d", "testimonialSalutation": "Cara Buse;", "testimonialCite": "\u2014 Natalia Capuz \u00b7 Spagna \u00b7 Crociera Blu 2025", "contactTag": "Contatti", "contactTitle": "Pronti a <em>salpare?</em>", "contactDesc": "Contattateci per pianificare la vostra esperienza di charter perfetta. Rispondiamo entro 24 ore.", "planCharter": "Pianifica il tuo charter", "waBtn": "WhatsApp", "emailBtn": "Invia Email", "instaBtn": "Instagram", "allYachts": "Tutti gli Yacht", "waBooking": "Prenotazione WhatsApp", "availableBadge": "Disponibile 2026", "s1title": "Crociera Blu", "s1desc": "Scoprite la costa turca tra baie nascoste, ancoraggi tranquilli e rotte accuratamente selezionate nell'Egeo e nel Mediterraneo.", "s2title": "Charter su Misura", "s2desc": "Dallo yacht che scegliete al ritmo del viaggio, ogni charter è modellato sulle vostre preferenze, sui vostri piani e sul vostro modo di viaggiare.", "s3title": "Vita a Bordo", "s3desc": "Mattine lente, pomeriggi in acqua e sere sotto le stelle: vivete il ritmo semplice della vita in mare.", "s4title": "A Tavola in Mare", "s4desc": "Ingredienti mediterranei freschi e menu su misura, preparati e serviti a bordo dal vostro chef privato.", "s5title": "Celebrazioni e Incontri", "s5desc": "Dai compleanni alle celebrazioni intime fino agli incontri privati, i momenti speciali assumono in mare un'atmosfera diversa.", "s6title": "Acqua e Relax", "s6desc": "Nuotare, fare paddleboard, praticare attività acquatiche o semplicemente trovare una baia tranquilla: vivete ogni giornata in acqua al vostro ritmo.", "introP1": "Argentum Yachting crea viaggi in yacht su misura lungo l'Egeo e il Mediterraneo turchi. Dalla scelta dello yacht giusto alla definizione della rotta, dell'esperienza a bordo e di ogni dettaglio intermedio, ogni charter è pensato attorno alle persone a bordo.", "introP2": "Costruito su oltre 15 anni di esperienza familiare nella nautica, il nostro approccio unisce la conoscenza del territorio a una guida personale prima e durante tutto il viaggio."}};
-let currentLang = 'en';
-
-function toggleLangMenu() {
-  document.getElementById('langMenu').classList.toggle('open');
-}
-
-document.addEventListener('click', function(e) {
-  if (!e.target.closest('.lang-dropdown')) {
-    document.getElementById('langMenu').classList.remove('open');
-  }
-});
-
-function setLang(lang) {
-  currentLang = lang;
-  const t = translations[lang];
-  document.getElementById('langCurrent').textContent = lang.toUpperCase();
-  document.getElementById('langMenu').classList.remove('open');
-  
-  // Update active state
-  document.querySelectorAll('.lang-option').forEach(btn => {
-    btn.classList.toggle('active', btn.textContent.startsWith(lang.toUpperCase()));
-  });
-  
-  // Apply translations
-  apply('heroTag', t.heroTag);
-  apply('heroTitle', t.heroTitle);
-  apply('heroDesc', t.heroDesc);
-  apply('exploreBtn', t.exploreBtn);
-  apply('planBtn', t.planBtn);
-  apply('navCta', t.charterBtn);
-  apply('aboutTag', t.aboutTag);
-  apply('aboutTitle', t.aboutTitle);
-  apply('aboutP1', t.aboutP1);
-  apply('aboutP2', t.aboutP2);
-  apply('fleetTag', t.fleetTag);
-  apply('fleetTitle', t.fleetTitle);
-  apply('fleetDesc', t.fleetDesc);
-  apply('destTag', t.destTag);
-  apply('destTitle', t.destTitle);
-  apply('marmaris', t.marmaris);
-  apply('gocek', t.gocek);
-  apply('bodrum', t.bodrum);
-  apply('bozburun', t.bozburun);
-  apply('servicesTag', t.servicesTag);
-  apply('servicesTitle', t.servicesTitle);
-  apply('testimonialSalutation', t.testimonialSalutation);
-  apply('testimonialText', t.testimonial);
-  apply('testimonialCite', t.testimonialCite);
-  apply('contactTag', t.contactTag);
-  apply('contactTitle', t.contactTitle);
-  apply('contactDesc', t.contactDesc);
-  apply('planCharter', t.planCharter);
-  apply('waBtn', t.waBtn);
-  const WA_GENERAL = {
-    en: 'Hello, I would like to get information about Argentum Yachting.',
-    tr: 'Merhaba, Argentum Yachting hakkında bilgi almak istiyorum.',
-    es: 'Hola, me gustaría recibir información sobre Argentum Yachting.',
-    it: 'Salve, vorrei ricevere informazioni su Argentum Yachting.'
-  };
-  const waMain = document.getElementById('waBtn');
-  if(waMain) waMain.href = 'https://wa.me/905393358280?text=' + encodeURIComponent(WA_GENERAL[lang] || WA_GENERAL.en);
-  apply('emailBtn', t.emailBtn);
-  apply('instaBtn', t.instaBtn);
-  apply('allYachtsBtn', t.allYachts);
-  apply('waBtnDetail', t.waBooking);
-  apply('s1title', t.s1title); apply('s1desc', t.s1desc);
-  apply('s2title', t.s2title); apply('s2desc', t.s2desc);
-  apply('s3title', t.s3title); apply('s3desc', t.s3desc);
-  apply('s4title', t.s4title); apply('s4desc', t.s4desc);
-  apply('s5title', t.s5title); apply('s5desc', t.s5desc);
-  apply('s6title', t.s6title); apply('s6desc', t.s6desc);
-  apply('introP1', t.introP1);
-  apply('introP2', t.introP2);
-  const IQ = {
-    en: 'Not merely a charter, but a quieter way to experience the sea.',
-    tr: 'Sadece bir kiralama değil, denizi daha sakin bir şekilde deneyimlemenin yolu.',
-    es: 'No es solo un chárter, sino una forma más serena de vivir el mar.',
-    it: 'Non semplicemente un charter, ma un modo più quieto di vivere il mare.'
-  };
-  apply('introQuote', IQ[lang] || IQ.en);
-  
-  // Available badges
-  document.querySelectorAll('.yacht-badge').forEach(el => el.textContent = t.availableBadge);
-  
-  // Nav links
-  const nt = navTranslations[lang];
-  if(nt) {
-    apply('navFleet', nt.fleet);
-    apply('navDestinations', nt.destinations);
-    apply('navServices', nt.services);
-    apply('navContact', nt.contact);
-  }
-  
-  // Stat labels
-  const HERO_STATS = {
-    en: [["Mediterranean","Based"],["Tailored Weekly","Charters"],["Crafted for","Intimate Groups"]],
-    tr: [["Akdeniz & Ege","Merkezli"],["Size Özel","Haftalık Kiralama"],["Küçük Gruplar","İçin Tasarlandı"]],
-    es: [["Mediterráneo","Nuestra Base"],["Charters Semanales","A Medida"],["Grupos Reducidos","Pensado Para"]],
-    it: [["Mediterraneo","La Nostra Base"],["Charter Settimanali","Su Misura"],["Piccoli Gruppi","Pensato Per"]]
-  };
-  const hs = HERO_STATS[lang] || HERO_STATS.en;
-  apply('statVal1', hs[0][0]); apply('statYachts', hs[0][1]);
-  apply('statVal2', hs[1][0]); apply('statPorts',  hs[1][1]);
-  apply('statVal3', hs[2][0]); apply('statYears',  hs[2][1]);
-  
-  
-  // View All / Close All translations
-  const N = yachtInfo.length;
-  const viewAllLabels = {
-    en: 'View All ' + N + ' Yachts →',
-    tr: 'Tüm ' + N + ' Tekneyi Gör →',
-    es: 'Ver los ' + N + ' Yates →',
-    it: 'Vedi tutti i ' + N + ' Yacht →'
-  };
-  const closeAllLabels = {en: '← Back', tr: '← Geri', es: '← Volver', it: '← Indietro'};
-  const allYachtsTagLabels = {en: 'Our Fleet', tr: 'Filomuz', es: 'Nuestra Flota', it: 'La Nostra Flotta'};
-  const allYachtsTitleLabels = {en: 'All ' + N + ' Yachts', tr: 'Tüm ' + N + ' Tekne', es: 'Los ' + N + ' Yates', it: 'Tutti i ' + N + ' Yacht'};
-  
-  const vab = document.getElementById('viewAllBtn');
-  if(vab) vab.textContent = viewAllLabels[lang] || viewAllLabels.en;
-  const cab = document.getElementById('closeAllBtn');
-  if(cab) cab.textContent = closeAllLabels[lang] || closeAllLabels.en;
-  const ayTag = document.getElementById('allYachtsTag');
-  if(ayTag) ayTag.textContent = allYachtsTagLabels[lang] || allYachtsTagLabels.en;
-  const ayTitle = document.getElementById('allYachtsTitle');
-  if(ayTitle) ayTitle.textContent = allYachtsTitleLabels[lang] || allYachtsTitleLabels.en;
-  
-  // Update All Yachts grid spec labels
-  const specLabelMap = {
-    en: {guests: 'Guests', cabins: 'Cabins', crew: 'Crew'},
-    tr: {guests: 'Misafir', cabins: 'Kabin', crew: 'Mürettebat'},
-    es: {guests: 'Invitados', cabins: 'Cabinas', crew: 'Tripulación'},
-    it: {guests: 'Ospiti', cabins: 'Cabine', crew: 'Equipaggio'}
-  };
-  const slm = specLabelMap[lang] || specLabelMap.en;
-  document.querySelectorAll('[data-spec]').forEach(function(el) {
-    const spec = el.getAttribute('data-spec').split('_')[0];
-    if(slm[spec]) el.textContent = slm[spec];
-  });
-  // HOW IT WORKS
-  const hw = HOWTO[lang] || HOWTO.en;
-  for(let i = 1; i <= 4; i++){ apply('hw'+i+'t', hw.steps[i-1][0]); apply('hw'+i+'d', hw.steps[i-1][1]); }
-  apply('contactTitle', hw.title);
-  apply('planCharter', hw.side);
-  apply('planCharterSub', hw.sideSub);
-
-  renderFleet();
-  if(document.getElementById('allYachtsPage').style.display === 'block'){ buildFilters(); renderAllYachts(); }
-  localStorage.setItem('lang', lang);
-}
-
-const HOWTO = {
-  en:{title:'How it <em>works.</em>', side:'Your journey starts here.',
-      sideSub:"Tell us what you have in mind, and we'll take it from there.",
-      steps:[['Tell us your plans','Share your dates, group size and preferred destination.'],
-             ['Discover your yacht','We select suitable yachts based on your preferences.'],
-             ['Shape your journey','Together, we plan the route, dining and onboard details.'],
-             ['Step aboard','Your crew takes care of the rest.']]},
-  tr:{title:'Nasıl <em>çalışır?</em>', side:'Yolculuğunuz burada başlıyor.',
-      sideSub:'Aklınızdakileri bize anlatın, gerisini biz halledelim.',
-      steps:[['Planlarınızı paylaşın','Tarihlerinizi, grup büyüklüğünüzü ve tercih ettiğiniz destinasyonu iletin.'],
-             ['Teknenizi keşfedin','Tercihlerinize uygun tekneleri sizin için seçelim.'],
-             ['Yolculuğunuzu şekillendirin','Rotayı, menüleri ve tekne içi detayları birlikte planlayalım.'],
-             ['Gemiye adım atın','Gerisini mürettebatınız halleder.']]},
-  es:{title:'Cómo <em>funciona.</em>', side:'Su viaje comienza aquí.',
-      sideSub:'Cuéntenos lo que tiene en mente y nosotros nos encargamos del resto.',
-      steps:[['Cuéntenos sus planes','Comparta sus fechas, el tamaño del grupo y el destino que prefiere.'],
-             ['Descubra su yate','Seleccionamos los yates adecuados según sus preferencias.'],
-             ['Dé forma a su viaje','Juntos planificamos la ruta, la gastronomía y los detalles a bordo.'],
-             ['Suba a bordo','Su tripulación se ocupa de todo lo demás.']]},
-  it:{title:'Come <em>funziona.</em>', side:'Il vostro viaggio inizia qui.',
-      sideSub:'Raccontateci cosa avete in mente e penseremo noi al resto.',
-      steps:[['Raccontateci i vostri piani','Condividete date, numero di ospiti e destinazione preferita.'],
-             ['Scoprite il vostro yacht','Selezioniamo gli yacht più adatti alle vostre preferenze.'],
-             ['Definite il viaggio','Insieme pianifichiamo rotta, ristorazione e dettagli di bordo.'],
-             ['Salite a bordo','Al resto pensa il vostro equipaggio.']]}
+const S = {
+  token: '',
+  yachts: [],        // çalışma kopyası
+  original: '',      // karşılaştırma için JSON metni
+  treeShas: {},      // repo'daki dosya yolu -> blob sha
+  photos: {},        // tekne id -> [{key, url, src:'repo'|'new'}]
+  photosOrig: {},    // yayındaki fotoğraf sırası (karşılaştırma için)
+  editing: null,
+  cb: 0,             // yayın sonrası önbellek kırıcı
 };
 
-function apply(id, text) {
-  const el = document.getElementById(id);
-  if (el) el.innerHTML = text;
+/* ─────────────────────────── yardımcılar ─────────────────────── */
+const $ = id => document.getElementById(id);
+
+/* Tarayıcının prompt/confirm pencereleri bastırılabiliyor; kendi pencerelerimizi kullanıyoruz. */
+let modalResolve = null;
+function openModal({ title, body = '', input = null, ok = 'Tamam', cancel = 'Vazgeç', danger = false }) {
+  $('mTitle').textContent = title;
+  $('mBody').textContent = body;
+  $('mBody').style.display = body ? '' : 'none';
+  const inp = $('mInput');
+  if (input !== null) {
+    inp.classList.remove('hidden');
+    inp.value = input.value || '';
+    inp.placeholder = input.placeholder || '';
+  } else inp.classList.add('hidden');
+  $('mOk').textContent = ok;
+  $('mOk').className = danger ? 'btn-danger' : 'btn-gold';
+  $('mCancel').textContent = cancel;
+  $('modal').classList.remove('hidden');
+  setTimeout(() => (input !== null ? inp : $('mOk')).focus(), 60);
+  return new Promise(res => { modalResolve = res; });
+}
+function closeModal(val) {
+  $('modal').classList.add('hidden');
+  const r = modalResolve; modalResolve = null;
+  if (r) r(val);
+}
+const askText    = (title, body, placeholder) =>
+  openModal({ title, body, input: { placeholder } });
+const askConfirm = (title, body, ok = 'Evet', danger = true) =>
+  openModal({ title, body, ok, danger }).then(v => v !== null);
+
+function toast(msg, kind) {
+  const el = document.createElement('div');
+  el.className = 'toast' + (kind ? ' ' + kind : '');
+  el.textContent = msg;
+  $('toast').appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; setTimeout(() => el.remove(), 300); },
+             kind === 'err' ? 7000 : 3600);
 }
 
-// Init — tekne verisi ayrı dosyadan gelir
-function bootYachts(data){
-  yachtInfo = data;
-  renderFleet();
-  setLang(localStorage.getItem('lang') || 'en');
+function slug(s) {
+  const map = { 'İ':'i','I':'i','ı':'i','Ş':'s','ş':'s','Ğ':'g','ğ':'g',
+                'Ü':'u','ü':'u','Ö':'o','ö':'o','Ç':'c','ç':'c' };
+  return s.split('').map(c => map[c] || c).join('')
+    .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
 }
-fetch('data/yachts.json')
-  .then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-  .then(bootYachts)
-  .catch(err => {
-    console.error('Tekne verisi yüklenemedi:', err);
-    const g = document.getElementById('fleetGrid');
-    if(g) g.innerHTML = '<p style="color:rgba(255,255,255,.45);padding:40px;font-size:13px">'
-      + 'Filo bilgileri şu anda yüklenemedi. Lütfen sayfayı yenileyin.</p>';
-  });
-</script>
 
+const pad = n => String(n).padStart(2, '0');
+const photoPath  = (id, i) => `${IMGDIR}/${id}/${pad(i + 1)}.webp`;
+const photoPathS = (id, i) => `${IMGDIR}/${id}/${pad(i + 1)}-s.webp`;
 
-<script>
-// Mobile destinations scroll
-(function(){
-  var destGrid = document.querySelector('[style*="grid-template-columns:repeat(4,1fr)"]');
-  if(!destGrid) return;
-  
-  // Only on mobile
-  function setupMobile(){
-    if(window.innerWidth <= 768){
-      destGrid.style.display = 'flex';
-      destGrid.style.flexDirection = 'row';
-      destGrid.style.overflowX = 'auto';
-      destGrid.style.gap = '2px';
-      destGrid.style.WebkitOverflowScrolling = 'touch';
-      destGrid.style.scrollbarWidth = 'none';
-      // Each card
-      var cards = destGrid.children;
-      for(var i=0;i<cards.length;i++){
-        cards[i].style.minWidth = '72vw';
-        cards[i].style.flexShrink = '0';
-        cards[i].style.aspectRatio = '3/4';
-      }
-    } else {
-      destGrid.style.display = 'grid';
-      destGrid.style.gridTemplateColumns = 'repeat(4,1fr)';
-      destGrid.style.overflowX = '';
-      var cards = destGrid.children;
-      for(var i=0;i<cards.length;i++){
-        cards[i].style.minWidth = '';
-        cards[i].style.flexShrink = '';
-      }
+function rawUrl(path) {
+  const q = S.cb ? '?cb=' + S.cb : '';
+  return `https://raw.githubusercontent.com/${REPO.owner}/${REPO.name}/${REPO.branch}/${path}${q}`;
+}
+
+/* ─────────────────────────── GitHub ──────────────────────────── */
+async function gh(path, opts = {}) {
+  const r = await fetch(`https://api.github.com/repos/${REPO.owner}/${REPO.name}${path}`, {
+    ...opts,
+    headers: {
+      'Authorization': 'Bearer ' + S.token,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      ...(opts.headers || {})
     }
+  });
+  if (!r.ok) {
+    let detail = '';
+    try { detail = (await r.json()).message || ''; } catch (e) {}
+    throw new Error(`GitHub ${r.status}${detail ? ' — ' + detail : ''}`);
   }
-  setupMobile();
-  window.addEventListener('resize', setupMobile);
-})();
-</script>
+  return r.status === 204 ? null : r.json();
+}
 
+async function loadRepo() {
+  const ref  = await gh(`/git/ref/heads/${REPO.branch}`);
+  const comm = await gh(`/git/commits/${ref.object.sha}`);
+  const tree = await gh(`/git/trees/${comm.tree.sha}?recursive=1`);
+  S.treeShas = {};
+  tree.tree.forEach(t => { if (t.type === 'blob') S.treeShas[t.path] = t.sha; });
+
+  const raw = await fetch(rawUrl(DATA) + '?t=' + Date.now());
+  if (!raw.ok) throw new Error('Tekne verisi okunamadı (' + raw.status + ')');
+  S.yachts = await raw.json();
+  S.original = JSON.stringify(S.yachts);
+
+  S.photos = {};
+  S.photosOrig = {};
+  S.yachts.forEach(y => {
+    S.photos[y.id] = [];
+    for (let i = 0; i < (y.n || 0); i++) {
+      const p = photoPath(y.id, i);
+      if (S.treeShas[p]) S.photos[y.id].push({ key: p, url: rawUrl(photoPathS(y.id, i)), src: 'repo' });
+    }
+    S.photosOrig[y.id] = S.photos[y.id].map(p => p.key);
+  });
+}
+
+/* ─────────────────────── görsel işleme ───────────────────────── */
+async function toWebp(bmp, spec) {
+  const w = Math.min(bmp.width, spec.w);
+  const h = Math.round(bmp.height * w / bmp.width);
+  const c = document.createElement('canvas');
+  c.width = w; c.height = h;
+  c.getContext('2d').drawImage(bmp, 0, 0, w, h);
+  let q = spec.q, blob = null;
+  for (let k = 0; k < 6; k++) {
+    blob = await new Promise(res => c.toBlob(res, 'image/webp', q));
+    if (!blob) throw new Error('Tarayıcınız WebP desteklemiyor');
+    if (blob.size <= spec.max || q <= 0.50) break;
+    q -= 0.07;
+  }
+  return blob;
+}
+
+async function processPhoto(file) {
+  let bmp;
+  try {
+    bmp = await createImageBitmap(file, { imageOrientation: 'from-image' });
+  } catch (e) {
+    bmp = await createImageBitmap(file);          // eski tarayıcı yedeği
+  }
+  const big = await toWebp(bmp, BIG);
+  const sml = await toWebp(bmp, SMALL);
+  if (bmp.close) bmp.close();
+  return { big, sml };
+}
+
+async function blobToB64(blob) {
+  const buf = new Uint8Array(await blob.arrayBuffer());
+  let s = '';
+  const CH = 0x8000;
+  for (let i = 0; i < buf.length; i += CH) s += String.fromCharCode.apply(null, buf.subarray(i, i + CH));
+  return btoa(s);
+}
+
+/* ─────────────────────── değişiklik takibi ───────────────────── */
+function changedIds() {
+  let orig = [];
+  try { orig = JSON.parse(S.original); } catch (e) {}
+  const byId = Object.fromEntries(orig.map(y => [y.id, JSON.stringify({ ...y, n: 0 })]));
+  const ids = new Set();
+  S.yachts.forEach(y => {
+    // bilgi değişti mi? (n ayrı kontrol ediliyor)
+    if (byId[y.id] !== JSON.stringify({ ...y, n: 0 })) ids.add(y.id);
+    // fotoğraflar değişti mi? (ekleme, silme, sıralama, kapak)
+    const now = (S.photos[y.id] || []).map(p => p.key).join('|');
+    const was = (S.photosOrig[y.id] || []).join('|');
+    if (now !== was) ids.add(y.id);
+  });
+  orig.forEach(y => { if (!S.yachts.some(x => x.id === y.id)) ids.add(y.id); });
+  return ids;
+}
+
+function refreshBar() {
+  const n = changedIds().size;
+  $('changeLbl').textContent = n
+    ? `${n} teknede bekleyen değişiklik var — henüz yayınlanmadı`
+    : 'Bekleyen değişiklik yok';
+  $('pubBtn').disabled = !n;
+  $('resetBtn').disabled = !n;
+}
+
+window.addEventListener('beforeunload', e => {
+  if (changedIds().size) { e.preventDefault(); e.returnValue = ''; }
+});
+
+/* ─────────────────────────── liste ───────────────────────────── */
+function renderList() {
+  const q = ($('search').value || '').toLowerCase().trim();
+  const ids = changedIds();
+  const list = S.yachts.filter(y =>
+    !q || y.name.toLowerCase().includes(q) || (y.base || '').toLowerCase().includes(q)
+       || (y.type || '').toLowerCase().includes(q));
+  $('countLbl').textContent = `${list.length} / ${S.yachts.length} tekne`;
+  $('ylist').innerHTML = list.map(y => {
+    const ph = S.photos[y.id] || [];
+    const thumb = ph.length ? ph[0].url : '';
+    return `<div class="yrow">
+      <div class="ythumb" style="${thumb ? `background-image:url('${thumb}')` : ''}"></div>
+      <div style="flex:1;min-width:140px">
+        <div class="yname">${esc(y.name)}</div>
+        <div class="ymeta">${esc(y.type || '—')} · ${esc(y.base || '—')} · ${ph.length} fotoğraf</div>
+      </div>
+      ${ids.has(y.id) ? '<span class="ychanged">değişti</span>' : ''}
+      <button class="btn-sm" data-edit="${y.id}">Düzenle</button>
+    </div>`;
+  }).join('') || '<p class="muted" style="padding:30px 4px">Eşleşen tekne yok.</p>';
+  $('ylist').querySelectorAll('[data-edit]').forEach(b =>
+    b.onclick = () => openEdit(b.dataset.edit));
+  refreshBar();
+}
+
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g,
+  c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+
+/* ─────────────────────────── düzenleme ───────────────────────── */
+function openEdit(id) {
+  const y = S.yachts.find(x => x.id === id);
+  if (!y) return;
+  S.editing = id;
+  $('f_name').value   = y.name   || '';
+  $('f_type').value   = y.type   || '';
+  $('f_base').value   = y.base   || '';
+  $('f_year').value   = y.year   || '';
+  $('f_length').value = y.length || '';
+  $('f_beam').value   = y.beam   || '';
+  $('f_guests').value = y.guests || '';
+  $('f_cabins').value = y.cabins || '';
+  $('f_crew').value   = y.crew   || '';
+  const d = y.descriptions || {};
+  $('d_en').value = d.en || ''; $('d_tr').value = d.tr || '';
+  $('d_es').value = d.es || ''; $('d_it').value = d.it || '';
+
+  const types = [...new Set(S.yachts.map(x => x.type).filter(Boolean))].sort();
+  const bases = [...new Set(S.yachts.map(x => x.base).filter(Boolean))].sort();
+  $('typeList').innerHTML = types.map(t => `<option value="${esc(t)}">`).join('');
+  $('baseList').innerHTML = bases.map(b => `<option value="${esc(b)}">`).join('');
+
+  $('hdTitle').textContent = y.name;
+  $('listView').classList.add('hidden');
+  $('editView').classList.remove('hidden');
+  $('backBtn').classList.remove('hidden');
+  window.scrollTo(0, 0);
+  renderPhotos();
+}
+
+function collectForm() {
+  const y = S.yachts.find(x => x.id === S.editing);
+  if (!y) return;
+  y.name   = $('f_name').value.trim();
+  y.type   = $('f_type').value.trim();
+  y.base   = $('f_base').value.trim();
+  y.year   = $('f_year').value.trim();
+  y.length = $('f_length').value.trim();
+  y.beam   = $('f_beam').value.trim();
+  y.guests = $('f_guests').value.trim();
+  y.cabins = $('f_cabins').value.trim();
+  y.crew   = $('f_crew').value.trim();
+  y.descriptions = {
+    en: $('d_en').value.trim(), tr: $('d_tr').value.trim(),
+    es: $('d_es').value.trim(), it: $('d_it').value.trim()
+  };
+  y.n = (S.photos[y.id] || []).length;
+}
+
+function closeEdit() {
+  collectForm();
+  S.editing = null;
+  $('hdTitle').textContent = 'Filo Yönetimi';
+  $('editView').classList.add('hidden');
+  $('listView').classList.remove('hidden');
+  $('backBtn').classList.add('hidden');
+  renderList();
+}
+
+/* ─────────────────────────── fotoğraflar ─────────────────────── */
+function renderPhotos() {
+  const id = S.editing;
+  const ph = S.photos[id] || [];
+  $('pgrid').innerHTML = ph.map((p, i) => `
+    <div class="pcell ${i === 0 ? 'cover' : ''}" style="background-image:url('${p.url}')">
+      ${i === 0 ? '<span class="pbadge">Kapak</span>' : ''}
+      <span class="pnum">${i + 1}</span>
+      <div class="pacts">
+        <button data-a="left"  data-i="${i}" title="Sola taşı"  ${i === 0 ? 'disabled' : ''}>←</button>
+        <button data-a="cover" data-i="${i}" title="Kapak yap"  ${i === 0 ? 'disabled' : ''}>Kapak</button>
+        <button data-a="right" data-i="${i}" title="Sağa taşı"  ${i === ph.length - 1 ? 'disabled' : ''}>→</button>
+        <button data-a="del"   data-i="${i}" title="Sil">Sil</button>
+      </div>
+    </div>`).join('')
+    + `<div class="pcell pnew" id="addPhoto"><span>+ Fotoğraf ekle</span><span class="small" style="opacity:.55">birden fazla seçebilirsiniz</span></div>`;
+
+  $('addPhoto').onclick = () => $('fileIn').click();
+  $('pgrid').querySelectorAll('[data-a]').forEach(b => b.onclick = () => {
+    const i = +b.dataset.i, a = b.dataset.a, arr = S.photos[id];
+    if (a === 'left')  [arr[i - 1], arr[i]] = [arr[i], arr[i - 1]];
+    if (a === 'right') [arr[i + 1], arr[i]] = [arr[i], arr[i + 1]];
+    if (a === 'cover') arr.unshift(arr.splice(i, 1)[0]);
+    if (a === 'del') {
+      if (arr.length <= 1) { toast('Her teknede en az bir fotoğraf olmalı.', 'err'); return; }
+      arr.splice(i, 1);
+    }
+    collectForm();
+    renderPhotos();
+    refreshBar();
+  });
+}
+
+async function addPhotos(files) {
+  const id = S.editing;
+  if (!id || !files.length) return;
+  showProgress('Fotoğraflar hazırlanıyor…');
+  let done = 0;
+  for (const f of files) {
+    if (!f.type.startsWith('image/')) { done++; continue; }
+    try {
+      setProgress(done / files.length, `${f.name} işleniyor… (${done + 1}/${files.length})`);
+      const { big, sml } = await processPhoto(f);
+      const key = 'new:' + id + ':' + Date.now() + ':' + Math.random().toString(36).slice(2, 8);
+      S.photos[id].push({ key, url: URL.createObjectURL(sml), src: 'new', big, sml });
+    } catch (e) {
+      toast(`${f.name} işlenemedi: ${e.message}`, 'err');
+    }
+    done++;
+  }
+  hideProgress();
+  collectForm();
+  renderPhotos();
+  refreshBar();
+  toast(`${done} fotoğraf eklendi. Yayınlamayı unutmayın.`, 'ok');
+}
+
+/* ─────────────────────────── yeni / sil ──────────────────────── */
+async function newYacht() {
+  const name = await askText('Yeni tekne',
+    'Teknenin adını yazın. Diğer bilgileri ve fotoğrafları sonraki adımda ekleyeceksiniz.',
+    'örn. Deniz Yıldızı');
+  if (!name || !name.trim()) return;
+  let id = slug(name);
+  if (!id) { toast('Bu isimden geçerli bir kısa ad üretilemedi.', 'err'); return; }
+  let base = id, k = 2;
+  while (S.yachts.some(y => y.id === id)) id = base + '-' + (k++);
+  const y = {
+    id, name: name.trim(), type: 'Gulet', year: '', length: '', beam: '',
+    guests: '', cabins: '', crew: '', base: '',
+    descriptions: { en: '', tr: '', es: '', it: '' }, n: 0
+  };
+  S.yachts.push(y);
+  S.photos[id] = [];
+  openEdit(id);
+  toast('Tekne oluşturuldu. Bilgileri doldurup en az bir fotoğraf ekleyin.', 'ok');
+}
+
+async function deleteYacht() {
+  const y = S.yachts.find(x => x.id === S.editing);
+  if (!y) return;
+  const ok = await askConfirm(`${y.name} silinsin mi?`,
+    'Tekne, bilgileri ve fotoğraflarıyla birlikte siteden kaldırılacak.\nBu işlem Yayınla dedikten sonra geçerli olur.',
+    'Sil');
+  if (!ok) return;
+  S.yachts = S.yachts.filter(x => x.id !== y.id);
+  delete S.photos[y.id];
+  S.editing = null;
+  $('editView').classList.add('hidden');
+  $('listView').classList.remove('hidden');
+  $('backBtn').classList.add('hidden');
+  $('hdTitle').textContent = 'Filo Yönetimi';
+  renderList();
+  toast(`${y.name} listeden çıkarıldı. Yayınla deyince siteden silinecek.`, 'ok');
+}
+
+/* ─────────────────────────── yayınlama ───────────────────────── */
+function showProgress(t) { $('progress').classList.remove('hidden'); setProgress(0, t); }
+function hideProgress()  { $('progress').classList.add('hidden'); }
+function setProgress(f, t) {
+  $('progBar').style.width = Math.round(Math.max(0, Math.min(1, f)) * 100) + '%';
+  if (t) $('progLbl').textContent = t;
+}
+
+function validate() {
+  const bad = [], ids = changedIds();
+  S.yachts.filter(y => ids.has(y.id)).forEach(y => {
+    const ph = S.photos[y.id] || [];
+    if (!y.name)                      bad.push(`${y.id}: tekne adı boş`);
+    if (!ph.length)                   bad.push(`${y.name || y.id}: en az bir fotoğraf gerekli`);
+    if (!(y.descriptions || {}).en)   bad.push(`${y.name || y.id}: İngilizce açıklama boş`);
+  });
+  return bad;
+}
+
+async function publish() {
+  const errs = validate();
+  if (errs.length) {
+    toast('Eksikler var: ' + errs.slice(0, 3).join(' · ') + (errs.length > 3 ? ` (+${errs.length - 3})` : ''), 'err');
+    return;
+  }
+  if (S.editing) collectForm();
+
+  try {
+    showProgress('Değişiklikler hazırlanıyor…');
+
+    // 1) hedef dosya haritasını kur
+    const want = {};                       // yol -> {sha} | {blob}
+    S.yachts.forEach(y => {
+      const ph = S.photos[y.id] || [];
+      y.n = ph.length;
+      ph.forEach((p, i) => {
+        if (p.src === 'repo') {
+          const oi = +p.key.match(/\/(\d+)\.webp$/)[1] - 1;
+          want[photoPath(y.id, i)]  = { sha: S.treeShas[photoPath(y.id, oi)] };
+          want[photoPathS(y.id, i)] = { sha: S.treeShas[photoPathS(y.id, oi)] };
+        } else {
+          want[photoPath(y.id, i)]  = { blob: p.big };
+          want[photoPathS(y.id, i)] = { blob: p.sml };
+        }
+      });
+    });
+
+    // 2) artık istenmeyen görseller -> silinecek
+    const dele = Object.keys(S.treeShas)
+      .filter(p => p.startsWith(IMGDIR + '/') && !p.startsWith(IMGDIR + '/site/') && !want[p]);
+
+    // 3) yeni görselleri blob olarak yükle
+    const uploads = Object.entries(want).filter(([, v]) => v.blob);
+    let i = 0;
+    for (const [path, v] of uploads) {
+      setProgress(i / Math.max(uploads.length, 1) * 0.75,
+                  `Fotoğraflar yükleniyor… (${i + 1}/${uploads.length})`);
+      const res = await gh('/git/blobs', {
+        method: 'POST',
+        body: JSON.stringify({ content: await blobToB64(v.blob), encoding: 'base64' })
+      });
+      v.sha = res.sha;
+      i++;
+    }
+
+    // 4) yachts.json
+    setProgress(0.80, 'Tekne bilgileri hazırlanıyor…');
+    const jsonBlob = await gh('/git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({
+        content: await blobToB64(new Blob([JSON.stringify(S.yachts, null, 1)])),
+        encoding: 'base64'
+      })
+    });
+
+    // 5) ağaç + commit + dal
+    setProgress(0.86, 'Yayına gönderiliyor…');
+    const ref  = await gh(`/git/ref/heads/${REPO.branch}`);
+    const base = ref.object.sha;
+    const comm = await gh(`/git/commits/${base}`);
+
+    const tree = [{ path: DATA, mode: '100644', type: 'blob', sha: jsonBlob.sha }];
+    Object.entries(want).forEach(([path, v]) => {
+      if (S.treeShas[path] !== v.sha) tree.push({ path, mode: '100644', type: 'blob', sha: v.sha });
+    });
+    dele.forEach(path => tree.push({ path, mode: '100644', type: 'blob', sha: null }));
+
+    const newTree = await gh('/git/trees', {
+      method: 'POST',
+      body: JSON.stringify({ base_tree: comm.tree.sha, tree })
+    });
+
+    setProgress(0.93, 'Kaydediliyor…');
+    const ids = [...changedIds()];
+    const msg = ids.length === 1 ? `Panel: ${ids[0]} güncellendi`
+                                 : `Panel: ${ids.length} tekne güncellendi`;
+    const newCommit = await gh('/git/commits', {
+      method: 'POST',
+      body: JSON.stringify({ message: msg, tree: newTree.sha, parents: [base] })
+    });
+    await gh(`/git/refs/heads/${REPO.branch}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ sha: newCommit.sha })
+    });
+
+    setProgress(1, 'Tamamlandı');
+    S.cb = Date.now();
+    await loadRepo();
+    hideProgress();
+    renderList();
+    toast('Yayınlandı. Site 1–2 dakika içinde güncellenir.', 'ok');
+  } catch (e) {
+    hideProgress();
+    toast('Yayınlanamadı: ' + e.message, 'err');
+    console.error(e);
+  }
+}
+
+/* ─────────────────────────── başlangıç ───────────────────────── */
+async function start(token) {
+  S.token = token;
+  showProgress('Bilgiler yükleniyor…');
+  try {
+    await gh('');                       // yetki kontrolü
+    await loadRepo();
+    localStorage.setItem('ay_token', token);
+    hideProgress();
+    $('login').classList.add('hidden');
+    $('app').classList.remove('hidden');
+    renderList();
+  } catch (e) {
+    hideProgress();
+    S.token = '';
+    toast('Giriş yapılamadı: ' + e.message, 'err');
+    $('login').classList.remove('hidden');
+    $('app').classList.add('hidden');
+  }
+}
+
+$('loginBtn').onclick = () => {
+  const t = $('tok').value.trim();
+  if (!t) { toast('Lütfen erişim anahtarınızı girin.', 'err'); return; }
+  start(t);
+};
+$('tok').addEventListener('keydown', e => { if (e.key === 'Enter') $('loginBtn').click(); });
+
+$('logoutBtn').onclick = async () => {
+  if (changedIds().size) {
+    const ok = await askConfirm('Çıkmak istiyor musunuz?',
+      'Yayınlanmamış değişiklikleriniz var. Çıkarsanız bunlar kaybolur.', 'Çık');
+    if (!ok) return;
+  }
+  localStorage.removeItem('ay_token');
+  location.reload();
+};
+$('backBtn').onclick  = closeEdit;
+$('doneBtn').onclick  = closeEdit;
+$('newBtn').onclick   = newYacht;
+$('delBtn').onclick   = deleteYacht;
+$('search').oninput   = renderList;
+$('pubBtn').onclick   = publish;
+$('resetBtn').onclick = async () => {
+  const ok = await askConfirm('Değişiklikler geri alınsın mı?',
+    'Yayınlanmamış tüm düzenlemeleriniz silinecek ve sitedeki hale dönülecek.', 'Geri al');
+  if (!ok) return;
+  showProgress('Geri alınıyor…');
+  S.editing = null;
+  await loadRepo();
+  hideProgress();
+  $('editView').classList.add('hidden');
+  $('listView').classList.remove('hidden');
+  $('backBtn').classList.add('hidden');
+  $('hdTitle').textContent = 'Filo Yönetimi';
+  renderList();
+  toast('Değişiklikler geri alındı.', 'ok');
+};
+$('fileIn').onchange = e => { addPhotos([...e.target.files]); e.target.value = ''; };
+
+$('mOk').onclick     = () => closeModal($('mInput').classList.contains('hidden') ? true : $('mInput').value);
+$('mCancel').onclick = () => closeModal(null);
+$('modal').onclick   = e => { if (e.target === $('modal')) closeModal(null); };
+$('mInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); $('mOk').click(); }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !$('modal').classList.contains('hidden')) closeModal(null);
+});
+
+['f_name','f_type','f_base','f_year','f_length','f_beam','f_guests','f_cabins','f_crew',
+ 'd_en','d_tr','d_es','d_it'].forEach(id =>
+  $(id).addEventListener('input', () => { collectForm(); refreshBar(); }));
+
+const saved = localStorage.getItem('ay_token');
+if (saved) start(saved); else hideProgress();
+</script>
 </body>
 </html>
