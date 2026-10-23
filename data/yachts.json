@@ -1,0 +1,800 @@
+[
+ {
+  "id": "gumus",
+  "name": "Gümüş-1",
+  "type": "Classic Gulet",
+  "year": "1998 / 2024",
+  "length": "32m",
+  "beam": "7.5m",
+  "guests": "18",
+  "cabins": "8",
+  "crew": "5",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Built in 1998, Gümüş-1 has been continuously refitted between 2014 and 2024 to meet today's luxury standards. Accommodating up to 18 guests in 8 air-conditioned cabins (2 Triple, 2 Master, 4 Double), it is perfect for large families and groups. Modern bathrooms, jacuzzi on the flybridge, projector system, sound system, and unlimited Wi-Fi add unique comfort. A dedicated 5-person crew ensures every detail is taken care of. Water sports: canoeing, paddle boarding, ringo, wakeboarding.",
+   "tr": "1998'de inşa edilen Gümüş-1, 2014-2024 yılları arasında sürekli yenilenerek günümüzün lüks standartlarını karşılar. 8 klimatlı kabinde (2 Triple, 2 Master, 4 Double) 18 misafire kadar ağırlar. Flybridge'deki jakuzi, projektör ve ses sistemi ile limitsiz Wi-Fi benzersiz bir konfor sunar. 5 kişilik mürettebat her detayı özenle yönetir.",
+   "es": "Construido en 1998 y renovado continuamente hasta 2024. Aloja hasta 18 huéspedes en 8 cabinas climatizadas. Jacuzzi en el flybridge, sistema de proyector y Wi-Fi ilimitado. Tripulación de 5 personas.",
+   "it": "Costruito nel 1998 e continuamente ristrutturato fino al 2024. Ospita fino a 18 ospiti in 8 cabine climatizzate. Jacuzzi sul flybridge, sistema di proiezione e Wi-Fi illimitato. Equipaggio di 5 persone."
+  },
+  "n": 8
+ },
+ {
+  "id": "vesta",
+  "name": "Vesta-1 Sevil",
+  "type": "Gulet",
+  "year": "2004 / 2020",
+  "length": "32m",
+  "beam": "7m",
+  "guests": "16",
+  "cabins": "8",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Vesta-1 Sevil is a 32-meter gulet designed for elegant blue cruise experiences, accommodating up to 16 guests in 8 comfortable cabins (4 Double, 4 Twin). Modern air-conditioned interiors, private bathrooms, indoor dining area, and complimentary Wi-Fi along the Turkish coast ensure a refined stay. Canoes, paddle boards, wakeboard, water skiing, and ringo provide a dynamic sea experience, while the professional 4-person crew delivers seamless service.",
+   "tr": "Vesta-1 Sevil, 8 konforlu kabinde (4 Double, 4 Twin) 16 misafire kadar ağırlayan zarif bir mavi yolculuk gulete. Modern klimatlı iç mekanlar, özel banyolar ve ücretsiz Wi-Fi konforlu bir tatil sunar. Kano, paddle board, wakeboard, su kayağı ve ringo ile dinamik bir deniz deneyimi yaşayın.",
+   "es": "Vesta-1 Sevil es un gulet de 32 metros que aloja hasta 16 huéspedes en 8 cabinas (4 Doble, 4 Twin). Interiores climatizados, baños privados y Wi-Fi gratuito. Deportes acuáticos variados con tripulación de 4 personas.",
+   "it": "Vesta-1 Sevil è un gulet di 32 metri che ospita fino a 16 ospiti in 8 cabine (4 Doppie, 4 Twin). Interni climatizzati, bagni privati e Wi-Fi gratuito. Sport acquatici variati con equipaggio di 4 persone."
+  },
+  "n": 9
+ },
+ {
+  "id": "silver",
+  "name": "Silver Moon",
+  "type": "Luxury Gulet",
+  "year": "2010 / 2025",
+  "length": "36m",
+  "beam": "7.7m",
+  "guests": "11",
+  "cabins": "5",
+  "crew": "5",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "This 36-meter ketch delivers absolute confidence at sea with twin 550 HP Caterpillar engines and advanced navigation systems. Accommodating up to 11 guests in 5 elegantly appointed cabins (Master and VIP suites) with en-suite bathrooms, air conditioning, and premium interiors. From wakeboarding and water skiing to paddle boards, canoes, and optional jet ski activities, every day is filled with excitement. Spacious sun decks invite you to relax and fully embrace the luxury of the sea.",
+   "tr": "36 metrelik bu ketch, ikiz 550 HP Caterpillar motorları ve gelişmiş navigasyon sistemleriyle denizde mutlak güvenilirlik sunar. Master ve VIP süitler dahil 5 zarif kabinde 11 misafire kadar ağırlar. Wakeboard, su kayağı, paddle board, kano ve opsiyonel jet ski aktiviteleriyle her gün heyecan dolu geçer.",
+   "es": "Este ketch de 36 metros con motores gemelos de 550 CV Caterpillar aloja hasta 11 huéspedes en 5 cabinas con suites Master y VIP. Wakeboard, esquí acuático, paddle board y jet ski opcional.",
+   "it": "Questo ketch da 36 metri con motori gemelli da 550 CV Caterpillar ospita fino a 11 ospiti in 5 cabine con suite Master e VIP. Wakeboard, sci d'acqua, paddle board e jet ski opzionale."
+  },
+  "n": 10
+ },
+ {
+  "id": "derya",
+  "name": "Derya Deniz",
+  "type": "Gulet",
+  "year": "2008 / 2021",
+  "length": "23.95m",
+  "beam": "6.85m",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Equipped with 5 comfortable cabins (2 Master, 3 Double), Derya Deniz can accommodate up to 10 privileged guests. Each cabin is designed with a private en-suite bathroom, toilet, and air conditioning. The elegant indoor saloon is fully air-conditioned for maximum comfort. A dedicated 4-person crew ensures flawless service throughout your journey. Water sports include canoeing, ringo, paddle boarding, wakeboarding, and water skiing — perfect for unforgettable memories on the turquoise Mediterranean.",
+   "tr": "5 konforlu kabinde (2 Master, 3 Double) 10 ayrıcalıklı misafire kadar ağırlayan Derya Deniz, her kabinde özel ensuite banyo, tuvalet ve klima sunmaktadır. Zarif klimatlı iç salon maksimum konfor için tasarlanmıştır. 4 kişilik mürettebat kusursuz hizmet sağlar. Su sporları: kano, ringo, paddle board, wakeboard, su kayağı.",
+   "es": "Derya Deniz aloja hasta 10 huéspedes en 5 cabinas con baños en suite y aire acondicionado. Salón interior climatizado y tripulación de 4 personas. Deportes acuáticos: piragüismo, ringo, paddle board, wakeboard.",
+   "it": "Derya Deniz ospita fino a 10 ospiti in 5 cabine con bagni en suite e aria condizionata. Salone interno climatizzato e equipaggio di 4 persone. Sport acquatici: canoa, ringo, paddle board, wakeboard."
+  },
+  "n": 11
+ },
+ {
+  "id": "grand",
+  "name": "Grand Sailor",
+  "type": "Gulet",
+  "year": "2020",
+  "length": "24m",
+  "beam": "6.3m",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Refitted in 2020, this 24-meter yacht perfectly combines modern design with reliable performance. Accommodating up to 8 guests in 4 elegant cabins (2 spacious Master suites), each with private en-suite bathroom, satellite Smart TV, air conditioning, luxury linens, towels, and hair dryers. Life on board offers karaoke nights, canoeing, paddle boarding, snorkeling, Wi-Fi, games, and spacious sunbathing areas. Optional water sports: banana rides, wakeboarding, and water skiing.",
+   "tr": "2020'de yenilenen bu 24 metrelik yat, modern tasarımı güvenilir performansla mükemmel biçimde birleştirir. 4 zarif kabinde (2 geniş Master süit) 8 misafire kadar ağırlar. Her kabin özel ensuite banyo, uydu Smart TV, klima ve lüks tekstil sunar. Karaoke geceleri, kano, paddle board, şnorkel ve opsiyonel su sporlarıyla unutulmaz anlar yaşayın.",
+   "es": "Reformado en 2020, este yate de 24 metros aloja hasta 8 huéspedes en 4 elegantes cabinas con suites Master, Smart TV, aire acondicionado. Karaoke, deportes acuáticos y amplias zonas de solarium.",
+   "it": "Ristrutturato nel 2020, questo yacht da 24 metri ospita fino a 8 ospiti in 4 eleganti cabine con suite Master, Smart TV, aria condizionata. Karaoke, sport acquatici e ampie zone solarium."
+  },
+  "n": 11
+ },
+ {
+  "id": "alfa-trawler-my",
+  "name": "Alfa",
+  "type": "Trawler",
+  "year": "2025",
+  "length": "27m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "4",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Alfa is a trawler yacht featuring one VIP master, one master, one suite and one double cabin, accommodating up to eight guests. Each cabin is air-conditioned and features a private bathroom. A professional four-person crew consists of a captain, chef, deckhand and service crew member. SUP, water ski and ringo are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Alfa, bir VIP master, bir master, bir suit ve bir double kabini ile sekiz misafire kadar ağırlayan bir trawler yattır. Tüm kabinler klimalı olup özel banyoya sahiptir. Kaptan, aşçı, güverteci ve servis görevlisinden oluşan dört kişilik profesyonel bir mürettebat görev yapmaktadır. Su aktiviteleri için SUP, su kayağı ve ringo mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Alfa es un yate trawler con un camarote VIP master, un master, una suite y un doble, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. La tripulación profesional de cuatro personas está formada por capitán, chef, marinero y personal de servicio. Para las actividades acuáticas se dispone de SUP, esquí acuático y ringo. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Alfa è uno yacht trawler con una cabina VIP master, una master, una suite e una doppia, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. L'equipaggio professionale di quattro persone comprende comandante, chef, marinaio e addetto al servizio. Per le attività acquatiche sono disponibili SUP, sci nautico e ringo. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "arslan-iii",
+  "name": "Arslan III",
+  "type": "Gulet",
+  "year": "2024",
+  "length": "20m",
+  "beam": "",
+  "guests": "6",
+  "cabins": "3",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Arslan 3 features two double and one twin cabin, accommodating up to six guests. Each cabin is air-conditioned and features a private bathroom. Canoe and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Arslan 3, iki double ve bir twin kabini ile altı misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için kano ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Arslan 3 cuenta con dos camarotes dobles y uno twin, con capacidad para hasta seis huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de canoa y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Arslan 3 dispone di due cabine doppie e una twin, per un massimo di sei ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili canoa e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 9
+ },
+ {
+  "id": "baran",
+  "name": "Baran S",
+  "type": "Motor Yacht · Azimut 80",
+  "year": "2007 / 2022",
+  "length": "24m",
+  "beam": "5.5m",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "3",
+  "base": "Göcek",
+  "descriptions": {
+   "en": "Built for refined and comfortable cruising, this 24-metre Azimut motor yacht accommodates up to 8 guests in 2 master and 2 twin cabins. With elegant indoor and outdoor living spaces, a spacious flybridge, and a professional crew on board, it offers a smooth and private charter experience ideal for families or groups seeking both relaxation and style at sea.",
+   "tr": "Rafine ve konforlu bir yolculuk için tasarlanan bu 24 metrelik Azimut motor yatı, 2 master ve 2 twin kabinde 8 misafire kadar ağırlayabilmektedir.",
+   "es": "Construido para una navegación refinada y confortable, este yate a motor Azimut de 24 metros aloja hasta 8 huéspedes en 2 camarotes master y 2 twin.",
+   "it": "Costruito per una crociera raffinata e confortevole, questo yacht a motore Azimut da 24 metri ospita fino a 8 ospiti in 2 cabine master e 2 twin."
+  },
+  "n": 9
+ },
+ {
+  "id": "gulet-berrak-su",
+  "name": "Berrak Su",
+  "type": "Gulet",
+  "year": "2008 / 2017",
+  "length": "33m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Berrak Su features two master and four double cabins, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom with shower. Water ski, wakeboard, paddle board, banana, two ringos, two canoes and jet ski are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Berrak Su, iki master ve dört double kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Su aktiviteleri için su kayağı, wakeboard, paddle board, banana, iki ringo, iki kano ve jet ski mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Berrak Su cuenta con dos camarotes master y cuatro dobles, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de esquí acuático, wakeboard, paddle board, banana, dos ringos, dos canoas y moto acuática. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Berrak Su dispone di due cabine master e quattro doppie, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. Per le attività acquatiche sono disponibili sci nautico, wakeboard, paddle board, banana, due ringo, due canoe e moto d'acqua. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "blu_dream",
+  "name": "Blu Dream",
+  "type": "Gulet",
+  "year": "1995 / 2018",
+  "length": "26m",
+  "beam": "6.5m",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Blu Dream combines elegance and spacious comfort with her 26-meter length and 6.5-meter beam. Built in 1995 and fully refitted in 2018, this gulet is an ideal choice for guests seeking the comfort of home while exploring the sea. Accommodating up to 8 guests in 4 comfortable cabins (2 Master, 2 Twin), each with a private shower and vacuum toilet. The saloon offers an indoor dining area for 8 guests. Complimentary Wi-Fi and a jacuzzi on the flybridge complete the experience. Water sports include canoe, paddle boards, water skis, wakeboard, ringo, and snorkeling gear.",
+   "tr": "Blu Dream, 26 metre uzunluğu ve 6,5 metre genişliğiyle zarafeti ve ferah konforu bir arada sunar. 1995'te inşa edilen ve 2018'de yenilenen bu gulet, denizi keşfederken ev konforunu arayanlar için ideal bir seçimdir. 4 konforlu kabinde (2 Master, 2 Twin) 8 misafire kadar ağırlayan tekne, her kabinde özel duş ve vakum tuvalet sunmaktadır. Türkiye suları boyunca ücretsiz Wi-Fi ve flybridge'deki jakuzi unutulmaz bir deneyim sağlar.",
+   "es": "Blu Dream combina elegancia y confort espacioso con sus 26 metros de eslora. Construido en 1995 y reformado en 2018, aloja hasta 8 huéspedes en 4 cómodas cabinas. Wi-Fi, jacuzzi en el flybridge y variados deportes acuáticos completan la experiencia.",
+   "it": "Blu Dream combina eleganza e comfort spazioso con i suoi 26 metri di lunghezza. Costruito nel 1995 e completamente ristrutturato nel 2018, ospita fino a 8 ospiti in 4 comode cabine con bagni privati, Wi-Fi gratuito e jacuzzi sul flybridge."
+  },
+  "n": 10
+ },
+ {
+  "id": "carpe-diem-1",
+  "name": "Carpe Diem 1",
+  "type": "Gulet",
+  "year": "2003 / 2013",
+  "length": "27m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Carpe Diem-1 features one master, one double and two twin cabins, accommodating up to eight guests. Each cabin is air-conditioned and features a private bathroom with shower. Water ski, wakeboard, ringo and canoe are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Carpe Diem-1, bir master, bir double ve iki twin kabini ile sekiz misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Su aktiviteleri için su kayağı, wakeboard, ringo ve kano mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Carpe Diem-1 cuenta con un camarote master, uno doble y dos twin, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de esquí acuático, wakeboard, ringo y canoa. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Carpe Diem-1 dispone di una cabina master, una doppia e due twin, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. Per le attività acquatiche sono disponibili sci nautico, wakeboard, ringo e canoa. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 12
+ },
+ {
+  "id": "cemre-junior",
+  "name": "Cemre Junior",
+  "type": "Ketch",
+  "year": "2006 / 2013",
+  "length": "26m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "4",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Cemre Junior is a ketch-rigged gulet featuring two master and four triple cabins, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom. A professional four-person crew is on board. Canoe, SUP, water ski, ringo and banana are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Cemre Junior, iki master ve dört üç kişilik kabini ile 12 misafire kadar ağırlayan ketch armalı bir gulettir. Tüm kabinler klimalı olup özel banyoya sahiptir. Teknede dört kişilik profesyonel bir mürettebat görev yapmaktadır. Su aktiviteleri için kano, SUP, su kayağı, ringo ve banana mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Cemre Junior es un gulet con aparejo de queche que cuenta con dos camarotes master y cuatro triples, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. A bordo hay una tripulación profesional de cuatro personas. Para las actividades acuáticas se dispone de canoa, SUP, esquí acuático, ringo y banana. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Cemre Junior è un gulet con armo a ketch, con due cabine master e quattro triple, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. A bordo è presente un equipaggio professionale di quattro persone. Per le attività acquatiche sono disponibili canoa, SUP, sci nautico, ringo e banana. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "deryam-deluxe",
+  "name": "Deryam Deluxe",
+  "type": "Gulet",
+  "year": "2023",
+  "length": "24m",
+  "beam": "",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Deryam Deluxe features two master, one double and two twin cabins, accommodating up to 10 guests. Each cabin is air-conditioned and features a private bathroom. Paddle board, Seabob, snorkelling and fishing equipment are available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Deryam Deluxe, iki master, bir double ve iki twin kabini ile 10 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Teknede paddle board, Seabob, şnorkel ve balık avı ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Deryam Deluxe cuenta con dos camarotes master, uno doble y dos twin, con capacidad para hasta 10 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. A bordo hay paddle board, Seabob y equipo de snorkel y pesca. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Deryam Deluxe dispone di due cabine master, una doppia e due twin, per un massimo di 10 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. A bordo sono disponibili paddle board, Seabob e attrezzatura per snorkeling e pesca. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "diva_deniz",
+  "name": "Diva Deniz",
+  "type": "Gulet",
+  "year": "2007 / 2024",
+  "length": "29m",
+  "beam": "7.7m",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "5",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Diva Deniz offers the perfect balance of comfort and safety at sea. Built in 2007 and fully refitted in 2024, she measures 29 meters with a 7.7-meter beam, powered by 2 x 450 HP Iveco engines. Accommodating up to 12 guests in 6 elegant cabins (2 Master, 2 Double, 2 Twin) with private en-suite bathrooms, air conditioning, satellite Smart TVs, and Bluetooth music system. Complimentary amenities include canoe, paddle board, snorkeling, and fishing equipment. Optional activities: banana, ringo, wakeboard, water skiing. Wi-Fi, solar panels, coffee machine, and laundry service ensure a complete yacht holiday.",
+   "tr": "Diva Deniz, denizde mükemmel bir konfor ve güvenlik dengesi sunar. 2007'de inşa edilen ve 2024'te tamamen yenilenen tekne, 29 metre uzunluğu ve 7,7 metre genişliğiyle 2 x 450 HP Iveco motor gücüyle seyir yapar. 6 zarif kabinde (2 Master, 2 Double, 2 Twin) 12 misafire kadar ağırlar. Klima, uydu Smart TV, Bluetooth müzik sistemi ve tüm kabin özellikleriyle konforu en üst düzeye çıkarır.",
+   "es": "Diva Deniz ofrece el equilibrio perfecto entre comodidad y seguridad. Construido en 2007 y reformado en 2024, aloja hasta 12 huéspedes en 6 elegantes cabinas con aire acondicionado, Smart TVs y Bluetooth. Motores 2 x 450 CV Iveco.",
+   "it": "Diva Deniz offre il perfetto equilibrio tra comfort e sicurezza. Costruito nel 2007 e completamente ristrutturato nel 2024, ospita fino a 12 ospiti in 6 eleganti cabine con aria condizionata, Smart TV e Bluetooth. Motori 2 x 450 CV Iveco."
+  },
+  "n": 11
+ },
+ {
+  "id": "doris-1",
+  "name": "Doris 1",
+  "type": "Gulet",
+  "year": "2010",
+  "length": "24m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Doris 1 features two master, one double and one triple cabin, accommodating up to eight guests. Each cabin is air-conditioned and features a private bathroom. Canoe and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Doris 1, iki master, bir double ve bir üç kişilik kabini ile sekiz misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için kano ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Doris 1 cuenta con dos camarotes master, uno doble y uno triple, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de canoa y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Doris 1 dispone di due cabine master, una doppia e una tripla, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili canoa e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 8
+ },
+ {
+  "id": "gozdem-the-one",
+  "name": "Gözdem The One",
+  "type": "Gulet",
+  "year": "2022",
+  "length": "26m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Gözdem The One features two master, one double and one twin cabin, accommodating up to eight guests. Each cabin is air-conditioned and features a private bathroom with shower. Canoe, paddle board, water ski, wakeboard and Seabob are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Gözdem The One, iki master, bir double ve bir twin kabini ile sekiz misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Su aktiviteleri için kano, paddle board, su kayağı, wakeboard ve Seabob mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Gözdem The One cuenta con dos camarotes master, uno doble y uno twin, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de canoa, paddle board, esquí acuático, wakeboard y Seabob. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Gözdem The One dispone di due cabine master, una doppia e una twin, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. Per le attività acquatiche sono disponibili canoa, paddle board, sci nautico, wakeboard e Seabob. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 9
+ },
+ {
+  "id": "gul-sultan-gulet",
+  "name": "Gül Sultan",
+  "type": "Ketch",
+  "year": "2016",
+  "length": "30m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Gül Sultan is a ketch-rigged gulet featuring two master, three twin and one double cabin, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom with an electric toilet. The twin beds can be converted into double beds for a more flexible cabin arrangement. A jacuzzi is located on the flybridge, while ringo, banana and canoe are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Gül Sultan, iki master, üç twin ve bir double kabini ile 12 misafire kadar ağırlayan ketch armalı bir gulettir. Tüm kabinler klimalı olup elektrikli tuvaletli özel banyoya sahiptir. Twin yataklar, daha esnek bir kabin düzeni için double yatağa dönüştürülebilir. Flybridge'de jakuzi bulunur; su aktiviteleri için ringo, banana ve kano mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Gül Sultan es un gulet con aparejo de queche que cuenta con dos camarotes master, tres twin y uno doble, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con inodoro eléctrico. Las camas twin pueden unirse para formar camas dobles, ofreciendo una distribución más flexible. En el flybridge hay un jacuzzi y, para las actividades acuáticas, se dispone de ringo, banana y canoa. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Gül Sultan è un gulet con armo a ketch, con due cabine master, tre twin e una doppia, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con WC elettrico. I letti twin possono essere uniti in letti matrimoniali per una sistemazione più flessibile. Sul flybridge si trova una vasca idromassaggio, mentre per le attività acquatiche sono disponibili ringo, banana e canoa. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 12
+ },
+ {
+  "id": "happy-hours-gulet",
+  "name": "Happy Hours",
+  "type": "Gulet",
+  "year": "—",
+  "length": "28m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "5",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Happy Hours features one master, two double, one twin and one triple cabin, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom with shower. Canoe, paddle board, pedal paddle board, wakeboard, water ski and ringo are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Happy Hours, bir master, iki double, bir twin ve bir üç kişilik kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Su aktiviteleri için kano, paddle board, pedallı paddle board, wakeboard, su kayağı ve ringo mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Happy Hours cuenta con un camarote master, dos dobles, uno twin y uno triple, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de canoa, paddle board, paddle board a pedales, wakeboard, esquí acuático y ringo. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Happy Hours dispone di una cabina master, due doppie, una twin e una tripla, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. Per le attività acquatiche sono disponibili canoa, paddle board, paddle board a pedali, wakeboard, sci nautico e ringo. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "junior_can",
+  "name": "Junior Can",
+  "type": "Gulet",
+  "year": "2022",
+  "length": "24m",
+  "beam": "—",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Built in 2022, this elegant 24-meter gulet features a classic wooden hull, cruising speed of 12 knots, and powerful twin 400 HP engines. Based in Marmaris and sailing under the Turkish flag, she accommodates up to 10 guests in 2 master, 2 double, and 1 twin cabin, each with a private bathroom. With a comfortable saloon, fully equipped kitchen, air conditioning, paddle board, canoe, flyfish, snorkeling, and fishing equipment, Junior Can offers the comfort of home at sea.",
+   "tr": "2022 yapımı bu zarif 24 metrelik gulet, klasik ahşap gövdesi, 12 knot seyir hızı ve güçlü ikiz 400 HP motorlarıyla öne çıkar. Marmaris merkezli tekne, her biri özel banyolu 2 master, 2 double ve 1 twin kabinde 10 misafire kadar ağırlar. Paddle board, kano, flyfish, şnorkel ve balık tutma ekipmanlarıyla denizde ev konforunu sunar.",
+   "es": "Gulet de 24 metros construido en 2022 con casco de madera clásico y motores gemelos de 400 CV. Aloja hasta 10 huéspedes en 5 cabinas con baños privados, basado en Marmaris con equipamiento completo de deportes acuáticos.",
+   "it": "Gulet da 24 metri costruito nel 2022 con scafo in legno classico e motori gemelli da 400 CV. Ospita fino a 10 ospiti in 5 cabine con bagni privati, basato a Marmaris con equipaggiamento completo per sport acquatici."
+  },
+  "n": 10
+ },
+ {
+  "id": "junior-tarkan-gulet",
+  "name": "Junior Tarkan",
+  "type": "Gulet",
+  "year": "2011",
+  "length": "20m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "3",
+  "crew": "",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Junior Tarkan features two master and one double cabin, each with air conditioning and a private bathroom with shower. Paddle board, snorkelling and fishing equipment are available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Junior Tarkan, iki master ve bir double kabine sahiptir; tüm kabinler klimalı olup duşlu özel banyo içerir. Teknede paddle board, şnorkel ve balık avı ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Junior Tarkan cuenta con dos camarotes master y uno doble, todos con aire acondicionado y baño privado con ducha. A bordo hay paddle board y equipo de snorkel y pesca. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Junior Tarkan dispone di due cabine master e una doppia, tutte climatizzate e con bagno privato con doccia. A bordo sono disponibili paddle board e attrezzatura per snorkeling e pesca. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 9
+ },
+ {
+  "id": "karaca-4-gulet",
+  "name": "Karaca-4",
+  "type": "Gulet",
+  "year": "1986 / 2023",
+  "length": "18m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Karaca-4 features two master and two double cabins, accommodating up to eight guests. Each cabin is air-conditioned and features a private bathroom. Two paddle boards, snorkelling and fishing equipment are available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Karaca-4, iki master ve iki double kabini ile sekiz misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Teknede iki paddle board ile şnorkel ve balık avı ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Karaca-4 cuenta con dos camarotes master y dos dobles, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. A bordo hay dos paddle boards y equipo de snorkel y pesca. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Karaca-4 dispone di due cabine master e due doppie, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. A bordo sono disponibili due paddle board e attrezzatura per snorkeling e pesca. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "kocaoglan",
+  "name": "Kocaoğlan-1",
+  "type": "Gulet",
+  "year": "2023",
+  "length": "32m",
+  "beam": "—",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "6",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Built in 2023, Kocaoğlan-1 is a stunning 32-meter gulet departing from Marmaris Port. Accommodating up to 12 guests in 6 cabins (2 Master, 2 Double, 2 Triple) with ensuite bathrooms, air-conditioned living spaces, and flawless interior design. The fully equipped lounge and gourmet kitchen elevate comfort to the level of on-shore luxury. An experienced crew of 6 — captain, chef, hostess, and three deckhands — deliver top-tier service. Enjoy air conditioning, TV-Satellite, sound system, Wi-Fi, and wine cooler alongside water sports: canoe, paddle board, ringo, banana, and water skiing.",
+   "tr": "2023 yılında inşa edilen Kocaoğlan-1, Marmaris Limanı'ndan hareket eden etkileyici bir 32 metrelik gulettir. 6 kabinde (2 Master, 2 Double, 2 Triple) 12 misafire kadar ağırlayan tekne, ensuite banyolar, klimalı yaşam alanları ve kusursuz iç tasarımıyla öne çıkar. Kaptan, aşçı, hostes ve üç tayfa dahil 6 kişilik deneyimli mürettebat birinci sınıf hizmet sunar.",
+   "es": "Construido en 2023, Kocaoğlan-1 es un impresionante gulet de 32 metros que parte desde el puerto de Marmaris. Aloja hasta 12 huéspedes en 6 cabinas con baños en suite. Tripulación de 6 personas y equipamiento completo de deportes acuáticos.",
+   "it": "Costruito nel 2023, Kocaoğlan-1 è uno splendido gulet di 32 metri con partenza dal porto di Marmaris. Ospita fino a 12 ospiti in 6 cabine con bagni en suite. Equipaggio di 6 persone e completo equipaggiamento per sport acquatici."
+  },
+  "n": 9
+ },
+ {
+  "id": "la-liberta",
+  "name": "La Liberta",
+  "type": "Gulet",
+  "year": "2023",
+  "length": "24m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "La Liberta features two master, three double and one triple cabin, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom. A professional four-person crew is on board. Canoe, transparent paddle board, Seabob and Jobe Revolve are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "La Liberta, iki master, üç double ve bir üç kişilik kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Teknede dört kişilik profesyonel bir mürettebat görev yapmaktadır. Su aktiviteleri için kano, şeffaf paddle board, Seabob ve Jobe Revolve mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "La Liberta cuenta con dos camarotes master, tres dobles y uno triple, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. A bordo hay una tripulación profesional de cuatro personas. Para las actividades acuáticas se dispone de canoa, paddle board transparente, Seabob y Jobe Revolve. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "La Liberta dispone di due cabine master, tre doppie e una tripla, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. A bordo è presente un equipaggio professionale di quattro persone. Per le attività acquatiche sono disponibili canoa, paddle board trasparente, Seabob e Jobe Revolve. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 11
+ },
+ {
+  "id": "lavinia",
+  "name": "Lavinia",
+  "type": "Gulet",
+  "year": "2022",
+  "length": "21m",
+  "beam": "6.5m",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "4",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "With a length of 21 meters and a beam of 6.5 meters, Lavinia combines modern yacht comfort with the elegance of the Mediterranean. Accommodating up to 10 guests in 5 cabins (2 Master, 3 Double), this exclusive yacht blends power with quiet sophistication thanks to her 450 HP engine. Each cabin features air conditioning, private bathroom, hair dryer, and soft towels. On the spacious aft deck, enjoy delightful dinners under the open sky, while the flybridge offers perfect sunbathing. Canoe, paddle board, snorkeling, and flipper equipment available.",
+   "tr": "21 metre uzunluğu ve 6,5 metre genişliğiyle Lavinia, modern yat konforunu Akdeniz'in zarafetiyle buluşturur. 5 kabinde (2 Master, 3 Double) 10 misafire kadar ağırlayan bu özel tekne, 450 HP motoru ve 4 kişilik profesyonel mürettebatıyla konforlu bir seyir sunar. Her kabin klimalı olup özel banyoya sahiptir.",
+   "es": "Lavinia combina el confort moderno con la elegancia mediterránea en sus 21 metros. Aloja hasta 10 huéspedes en 5 cabinas climatizadas con baños privados. Motor de 450 CV y tripulación de 4 personas garantizan una experiencia impecable.",
+   "it": "Lavinia unisce comfort moderno ed eleganza mediterranea nei suoi 21 metri. Ospita fino a 10 ospiti in 5 cabine climatizzate con bagni privati. Motore da 450 CV e equipaggio di 4 persone per un'esperienza impeccabile."
+  },
+  "n": 12
+ },
+ {
+  "id": "maitresse-my",
+  "name": "Maitresse",
+  "type": "Motor Yacht",
+  "year": "1994 / 2019",
+  "length": "23m",
+  "beam": "",
+  "guests": "8-10",
+  "cabins": "4",
+  "crew": "",
+  "base": "Göcek",
+  "descriptions": {
+   "en": "Maitresse M/Y features one VIP master, one master, one twin and one bunk-bed cabin, accommodating up to eight adults and two children. Each cabin is air-conditioned and features a private bathroom with an electric toilet. Water sports are not available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Maitresse M/Y, bir VIP master, bir master, bir twin ve bir ranzalı kabini ile sekiz yetişkin ve iki çocuğa kadar ağırlar. Tüm kabinler klimalı olup elektrikli tuvaletli özel banyoya sahiptir. Teknede su sporları bulunmamaktadır. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Maitresse M/Y cuenta con un camarote VIP master, uno master, uno twin y uno con literas, con capacidad para hasta ocho adultos y dos niños. Todos los camarotes disponen de aire acondicionado y baño privado con inodoro eléctrico. No hay deportes acuáticos a bordo. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Maitresse M/Y dispone di una cabina VIP master, una master, una twin e una con letti a castello, per un massimo di otto adulti e due bambini. Tutte le cabine sono climatizzate e dotate di bagno privato con WC elettrico. A bordo non sono disponibili sport acquatici. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "maske2-gulet",
+  "name": "Maske 2",
+  "type": "Ketch",
+  "year": "2013 / 2016",
+  "length": "30m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "4",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Maske 2 is a ketch-rigged gulet featuring two master, three VIP double and one twin cabin, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom. A professional four-person crew consists of a captain, chef and two deckhands. Water ski, canoe and snorkelling equipment are available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Maske 2, iki master, üç VIP double ve bir twin kabini ile 12 misafire kadar ağırlayan ketch armalı bir gulettir. Tüm kabinler klimalı olup özel banyoya sahiptir. Kaptan, aşçı ve iki güverteciden oluşan dört kişilik profesyonel bir mürettebat görev yapmaktadır. Teknede su kayağı, kano ve şnorkel ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Maske 2 es un gulet con aparejo de queche que cuenta con dos camarotes master, tres VIP dobles y uno twin, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. La tripulación profesional de cuatro personas está formada por capitán, chef y dos marineros. A bordo hay esquí acuático, canoa y equipo de snorkel. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Maske 2 è un gulet con armo a ketch, con due cabine master, tre VIP doppie e una twin, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. L'equipaggio professionale di quattro persone comprende comandante, chef e due marinai. A bordo sono disponibili sci nautico, canoa e attrezzatura per lo snorkeling. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "maske-5-gulet",
+  "name": "Maske 5",
+  "type": "Gulet",
+  "year": "2021",
+  "length": "26m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Maske 5 features one master, four double and one bunk-bed cabin, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom with shower. Water ski, canoe, ringo and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Maske 5, bir master, dört double ve bir ranzalı kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Su aktiviteleri için su kayağı, kano, ringo ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Maske 5 cuenta con un camarote master, cuatro dobles y uno con literas, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de esquí acuático, canoa, ringo y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Maske 5 dispone di una cabina master, quattro doppie e una con letti a castello, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. Per le attività acquatiche sono disponibili sci nautico, canoa, ringo e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "maske-3-gulet",
+  "name": "Maske-3",
+  "type": "Trawler",
+  "year": "2017",
+  "length": "20m",
+  "beam": "",
+  "guests": "7",
+  "cabins": "3",
+  "crew": "",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Maske 3 is a wooden-hulled trawler yacht featuring two double and one triple cabin, accommodating up to seven guests. Each cabin is air-conditioned and features a private bathroom. Water ski and canoe are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Maske 3, iki double ve bir üç kişilik kabini ile yedi misafire kadar ağırlayan ahşap gövdeli bir trawler yattır. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için su kayağı ve kano mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Maske 3 es un yate trawler de casco de madera con dos camarotes dobles y uno triple, con capacidad para hasta siete huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de esquí acuático y canoa. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Maske 3 è uno yacht trawler con scafo in legno, con due cabine doppie e una tripla, per un massimo di sette ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili sci nautico e canoa. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "mein_schatz",
+  "name": "Mein Schatz",
+  "type": "Gulet",
+  "year": "2005 / 2013",
+  "length": "30m",
+  "beam": "7.2m",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "5",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Mein Schatz is a 30-meter elegant gulet with a 7.2-meter beam, built in 2005 and refitted in 2013. Accommodating up to 10 guests in 5 comfortable cabins (2 Master, 2 Double, 1 Twin) with private bathrooms, vacuum toilets, and spacious living areas. Complimentary Wi-Fi along the Turkish coast. A professional 5-person crew including an experienced captain and chef ensures seamless cruising through the beautiful bays of the Aegean and Mediterranean. Water sports: canoe, paddle board, water skiing, wakeboard, ringo, and knee-board.",
+   "tr": "Mein Schatz, 7,2 metre genişliğindeki 30 metrelik zarif bir gulettir; 2005'te inşa edilmiş ve 2013'te yenilenmiştir. 5 konforlu kabinde (2 Master, 2 Double, 1 Twin) 10 misafire kadar ağırlar. Türkiye kıyısı boyunca ücretsiz Wi-Fi sunar. 5 kişilik profesyonel mürettebat eşliğinde Ege ve Akdeniz koylarını keşfedin.",
+   "es": "Mein Schatz es un elegante gulet de 30 metros construido en 2005 y reformado en 2013. Aloja hasta 10 huéspedes en 5 cabinas con baños privados. Tripulación de 5 personas y amplia oferta de deportes acuáticos.",
+   "it": "Mein Schatz è un elegante gulet di 30 metri costruito nel 2005 e ristrutturato nel 2013. Ospita fino a 10 ospiti in 5 cabine con bagni privati. Equipaggio di 5 persone e ampia offerta di sport acquatici."
+  },
+  "n": 10
+ },
+ {
+  "id": "miro",
+  "name": "Miro",
+  "type": "Trawler",
+  "year": "2010 / 2019",
+  "length": "22m",
+  "beam": "5.2m",
+  "guests": "6",
+  "cabins": "3",
+  "crew": "2",
+  "base": "Göcek",
+  "descriptions": {
+   "en": "A stylish 22-metre motor yacht designed for comfort and relaxation. Accommodating up to 6 guests in 2 master cabins and 1 twin cabin, it offers a private and peaceful experience on the sea. With a spacious flybridge and thoughtfully designed living areas, it's ideal for small families or groups of friends. A professional crew of 2 ensures a seamless and enjoyable charter.",
+   "tr": "Konfor ve dinlenme için tasarlanmış şık bir 22 metrelik motor yatı. 2 master ve 1 twin kabinde 6 misafire kadar ağırlayan tekne, denizde özel ve huzurlu bir deneyim sunar.",
+   "es": "Un elegante yate a motor de 22 metros diseñado para el confort y la relajación. Aloja hasta 6 huéspedes en 2 camarotes master y 1 twin. Tripulación profesional de 2 personas.",
+   "it": "Uno yacht a motore elegante da 22 metri progettato per il comfort e il relax. Ospita fino a 6 ospiti in 2 cabine master e 1 twin. Equipaggio di 2 persone."
+  },
+  "n": 10
+ },
+ {
+  "id": "queen-atlantis",
+  "name": "Queen Atlantis",
+  "type": "Ketch",
+  "year": "2014 / 2023",
+  "length": "36m",
+  "beam": "",
+  "guests": "16",
+  "cabins": "8",
+  "crew": "",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Queen Atlantis is a ketch-rigged gulet featuring two master, four double and two twin cabins, accommodating up to 16 guests. Each cabin is air-conditioned and features a private bathroom. Her ketch rig also allows for sailing under suitable wind and weather conditions. Paddle board, canoe and ringo are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Queen Atlantis, iki master, dört double ve iki twin kabini ile 16 misafire kadar ağırlayan ketch armalı bir gulettir. Tüm kabinler klimalı olup özel banyoya sahiptir. Ketch arması, uygun rüzgar ve hava koşullarında yelkenle seyre de imkan tanır. Su aktiviteleri için paddle board, kano ve ringo mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Queen Atlantis es un gulet con aparejo de queche que cuenta con dos camarotes master, cuatro dobles y dos twin, con capacidad para hasta 16 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Su aparejo de queche permite además navegar a vela con viento y condiciones favorables. Para las actividades acuáticas se dispone de paddle board, canoa y ringo. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Queen Atlantis è un gulet con armo a ketch, con due cabine master, quattro doppie e due twin, per un massimo di 16 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. L'armo a ketch consente inoltre di navigare a vela con vento e condizioni favorevoli. Per le attività acquatiche sono disponibili paddle board, canoa e ringo. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "queen-of-sea",
+  "name": "Queen of Sea",
+  "type": "Gulet",
+  "year": "2007 / 2023",
+  "length": "29m",
+  "beam": "",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Queen of Sea features two master, two double and one twin cabin, accommodating up to 10 guests. Each cabin is air-conditioned and features a private bathroom. Canoe, ringo, paddle board, seascooter, water ski and wakeboard are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Queen of Sea, iki master, iki double ve bir twin kabini ile 10 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için kano, ringo, paddle board, deniz skuteri, su kayağı ve wakeboard mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Queen of Sea cuenta con dos camarotes master, dos dobles y uno twin, con capacidad para hasta 10 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de canoa, ringo, paddle board, scooter submarino, esquí acuático y wakeboard. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Queen of Sea dispone di due cabine master, due doppie e una twin, per un massimo di 10 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili canoa, ringo, paddle board, scooter subacqueo, sci nautico e wakeboard. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "seven1-gulet",
+  "name": "Seven 1",
+  "type": "Gulet",
+  "year": "2005",
+  "length": "27m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Seven 1 is a ketch-rigged gulet featuring one master and five double cabins, each with air conditioning and a private bathroom with shower. Canoe and surf equipment are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Seven 1, bir master ve beş double kabini bulunan ketch armalı bir gulettir; tüm kabinler klimalı olup duşlu özel banyo içerir. Su aktiviteleri için kano ve sörf ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Seven 1 es un gulet con aparejo de queche que cuenta con un camarote master y cinco dobles, todos con aire acondicionado y baño privado con ducha. Para las actividades acuáticas se dispone de canoa y equipo de surf. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Seven 1 è un gulet con armo a ketch, con una cabina master e cinque doppie, tutte climatizzate e con bagno privato con doccia. Per le attività acquatiche sono disponibili canoa e attrezzatura da surf. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "smyrna-1-gulet",
+  "name": "Smyrna-1",
+  "type": "Gulet",
+  "year": "2003 / 2010",
+  "length": "30m",
+  "beam": "",
+  "guests": "8",
+  "cabins": "4",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Smyrna-1 is a ketch-rigged gulet featuring two double and two twin cabins, accommodating up to eight guests. Each cabin is air-conditioned and features a private home-style bathroom with shower. Canoe, ringo, banana and wakeboard are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Smyrna-1, iki double ve iki twin kabini ile sekiz misafire kadar ağırlayan ketch armalı bir gulettir. Tüm kabinler klimalı olup duşlu, ev konforunda özel banyoya sahiptir. Su aktiviteleri için kano, ringo, banana ve wakeboard mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Smyrna-1 es un gulet con aparejo de queche que cuenta con dos camarotes dobles y dos twin, con capacidad para hasta ocho huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado tipo hogar con ducha. Para las actividades acuáticas se dispone de canoa, ringo, banana y wakeboard. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Smyrna-1 è un gulet con armo a ketch, con due cabine doppie e due twin, per un massimo di otto ospiti. Tutte le cabine sono climatizzate e dotate di un bagno privato in stile domestico con doccia. Per le attività acquatiche sono disponibili canoa, ringo, banana e wakeboard. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 12
+ },
+ {
+  "id": "sunworld-x",
+  "name": "Sunworld X",
+  "type": "Gulet",
+  "year": "1998 / 2012",
+  "length": "33m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Sunworld X features two VIP master, one master and three double cabins, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom. Ringo, paddle board, water ski and jet ski are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Sunworld X, iki VIP master, bir master ve üç double kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için ringo, paddle board, su kayağı ve jet ski mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Sunworld X cuenta con dos camarotes VIP master, uno master y tres dobles, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de ringo, paddle board, esquí acuático y moto acuática. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Sunworld X dispone di due cabine VIP master, una master e tre doppie, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili ringo, paddle board, sci nautico e moto d'acqua. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "ulucinar",
+  "name": "Uluçınar",
+  "type": "Gulet",
+  "year": "1995 / 2022",
+  "length": "26m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Uluçınar features four double and two twin cabins, accommodating up to 12 guests. Each cabin is air-conditioned and features a private bathroom. Wakeboard, paddle board, canoe, ringo and water ski are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Uluçınar, dört double ve iki twin kabini ile 12 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Su aktiviteleri için wakeboard, paddle board, kano, ringo ve su kayağı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Uluçınar cuenta con cuatro camarotes dobles y dos twin, con capacidad para hasta 12 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de wakeboard, paddle board, canoa, ringo y esquí acuático. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Uluçınar dispone di quattro cabine doppie e due twin, per un massimo di 12 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili wakeboard, paddle board, canoa, ringo e sci nautico. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "ugur-2005",
+  "name": "Uğur 2005",
+  "type": "Gulet",
+  "year": "2006 / 2019",
+  "length": "32m",
+  "beam": "",
+  "guests": "14",
+  "cabins": "7",
+  "crew": "5",
+  "base": "Marmaris",
+  "descriptions": {
+   "en": "Uğur 2005 features two suite master, two master and three double cabins, accommodating up to 14 guests. Each cabin is air-conditioned and features a private bathroom with shower. A professional five-person crew is on board. Water ski, wakeboard, paddle board, banana, two ringos, two canoes and jet ski are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Uğur 2005, iki suit master, iki master ve üç double kabini ile 14 misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Teknede beş kişilik profesyonel bir mürettebat görev yapmaktadır. Su aktiviteleri için su kayağı, wakeboard, paddle board, banana, iki ringo, iki kano ve jet ski mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Uğur 2005 cuenta con dos camarotes master tipo suite, dos master y tres dobles, con capacidad para hasta 14 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. A bordo hay una tripulación profesional de cinco personas. Para las actividades acuáticas se dispone de esquí acuático, wakeboard, paddle board, banana, dos ringos, dos canoas y moto acuática. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Uğur 2005 dispone di due cabine master tipo suite, due master e tre doppie, per un massimo di 14 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. A bordo è presente un equipaggio professionale di cinque persone. Per le attività acquatiche sono disponibili sci nautico, wakeboard, paddle board, banana, due ringo, due canoe e moto d'acqua. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "van-guard-my",
+  "name": "Van Guard",
+  "type": "Motor Yacht",
+  "year": "—",
+  "length": "28m",
+  "beam": "",
+  "guests": "6",
+  "cabins": "3",
+  "crew": "",
+  "base": "Göcek",
+  "descriptions": {
+   "en": "Van Guard features two master and one twin cabin, each with air conditioning and a private bathroom. The twin beds can be converted into a double bed for a more flexible cabin arrangement. Canoe, paddle board, water ski, wakeboard, banana, ringo, snorkelling and basic fishing equipment are available on board. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Van Guard, iki master ve bir twin kabine sahiptir; tüm kabinler klimalı olup özel banyo içerir. Twin yataklar, daha esnek bir kabin düzeni için double yatağa dönüştürülebilir. Teknede kano, paddle board, su kayağı, wakeboard, banana, ringo, şnorkel ve temel balık avı ekipmanı mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Van Guard cuenta con dos camarotes master y uno twin, todos con aire acondicionado y baño privado. Las camas twin pueden unirse para formar una cama doble, ofreciendo una distribución más flexible. A bordo hay canoa, paddle board, esquí acuático, wakeboard, banana, ringo, equipo de snorkel y equipo básico de pesca. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Van Guard dispone di due cabine master e una twin, tutte climatizzate e con bagno privato. I letti twin possono essere uniti in un letto matrimoniale per una sistemazione più flessibile. A bordo sono disponibili canoa, paddle board, sci nautico, wakeboard, banana, ringo, attrezzatura per lo snorkeling e attrezzatura da pesca di base. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 10
+ },
+ {
+  "id": "white-soul-gulet",
+  "name": "White Soul",
+  "type": "Gulet",
+  "year": "2007 / 2018",
+  "length": "38m",
+  "beam": "",
+  "guests": "10",
+  "cabins": "5",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "White Soul features one suite master, two master and two double cabins, accommodating up to 10 guests. Each cabin is air-conditioned and features a private bathroom. An extensive selection of water toys is available on board, including canoe, paddle board, jet ski, Seabob, banana, doughnut, wakeboard, kneeboard, water ski, Subwing, ringo, diving equipment and Zapata Flyboard. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "White Soul, bir suit master, iki master ve iki double kabini ile 10 misafire kadar ağırlar. Tüm kabinler klimalı olup özel banyoya sahiptir. Teknede kano, paddle board, jet ski, Seabob, banana, doughnut, wakeboard, kneeboard, su kayağı, Subwing, ringo, dalış ekipmanı ve Zapata Flyboard dahil olmak üzere geniş bir su oyuncakları seçkisi bulunmaktadır. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "White Soul cuenta con un camarote master tipo suite, dos master y dos dobles, con capacidad para hasta 10 huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado. A bordo hay una amplia selección de juguetes acuáticos, entre ellos canoa, paddle board, moto acuática, Seabob, banana, doughnut, wakeboard, kneeboard, esquí acuático, Subwing, ringo, equipo de buceo y Zapata Flyboard. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "White Soul dispone di una cabina master tipo suite, due master e due doppie, per un massimo di 10 ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato. A bordo è disponibile un'ampia selezione di giochi d'acqua, tra cui canoa, paddle board, moto d'acqua, Seabob, banana, doughnut, wakeboard, kneeboard, sci nautico, Subwing, ringo, attrezzatura subacquea e Zapata Flyboard. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 8
+ },
+ {
+  "id": "gulet-zehra-sultan",
+  "name": "Zehra Sultan",
+  "type": "Gulet",
+  "year": "—",
+  "length": "24m",
+  "beam": "",
+  "guests": "12",
+  "cabins": "6",
+  "crew": "",
+  "base": "Bozburun",
+  "descriptions": {
+   "en": "Zehra Sultan features two master and four double cabins, each with a private bathroom. Air conditioning is not available on board. Canoe and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Zehra Sultan, iki master ve dört double kabine sahiptir; her kabinde özel banyo bulunur. Teknede klima bulunmamaktadır. Su aktiviteleri için kano ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Zehra Sultan cuenta con dos camarotes master y cuatro dobles, cada uno con baño privado. No hay aire acondicionado a bordo. Para las actividades acuáticas se dispone de canoa y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Zehra Sultan dispone di due cabine master e quattro doppie, ciascuna con bagno privato. A bordo non è presente l'aria condizionata. Per le attività acquatiche sono disponibili canoa e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 11
+ },
+ {
+  "id": "cagan-2-gulet",
+  "name": "Çağan 2",
+  "type": "Gulet",
+  "year": "2002 / 2022",
+  "length": "18m",
+  "beam": "",
+  "guests": "7",
+  "cabins": "3",
+  "crew": "",
+  "base": "Bodrum",
+  "descriptions": {
+   "en": "Çağan 2 features one master cabin accommodating three guests and two double cabins. Each cabin is air-conditioned and features a private bathroom. Canoe and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Çağan 2, üç misafir ağırlayan bir master kabin ve iki double kabine sahiptir. Tüm kabinler klimalı olup özel banyo içerir. Su aktiviteleri için kano ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Çağan 2 cuenta con un camarote master para tres huéspedes y dos camarotes dobles. Todos los camarotes disponen de aire acondicionado y baño privado. Para las actividades acuáticas se dispone de canoa y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Çağan 2 dispone di una cabina master per tre ospiti e di due cabine doppie. Tutte le cabine sono climatizzate e dotate di bagno privato. Per le attività acquatiche sono disponibili canoa e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 8
+ },
+ {
+  "id": "gulet-cekin",
+  "name": "Çekin",
+  "type": "Gulet",
+  "year": "2006 / 2016",
+  "length": "19m",
+  "beam": "",
+  "guests": "6",
+  "cabins": "3",
+  "crew": "3",
+  "base": "Fethiye",
+  "descriptions": {
+   "en": "Gulet Çekin features three double cabins, accommodating up to six guests. Each cabin is air-conditioned and features a private bathroom with shower. A professional three-person crew is on board. Canoe and paddle board are available for water activities. Alternative embarkation points may be arranged depending on your preferred itinerary.",
+   "tr": "Gulet Çekin, üç double kabini ile altı misafire kadar ağırlar. Tüm kabinler klimalı olup duşlu özel banyoya sahiptir. Teknede üç kişilik profesyonel bir mürettebat görev yapmaktadır. Su aktiviteleri için kano ve paddle board mevcuttur. Tercih ettiğiniz güzergaha göre alternatif biniş noktaları ayarlanabilir.",
+   "es": "Gulet Çekin cuenta con tres camarotes dobles, con capacidad para hasta seis huéspedes. Todos los camarotes disponen de aire acondicionado y baño privado con ducha. A bordo hay una tripulación profesional de tres personas. Para las actividades acuáticas se dispone de canoa y paddle board. Se pueden organizar puntos de embarque alternativos según el itinerario que prefiera.",
+   "it": "Gulet Çekin dispone di tre cabine doppie, per un massimo di sei ospiti. Tutte le cabine sono climatizzate e dotate di bagno privato con doccia. A bordo è presente un equipaggio professionale di tre persone. Per le attività acquatiche sono disponibili canoa e paddle board. È possibile concordare punti di imbarco alternativi in base all'itinerario preferito."
+  },
+  "n": 9
+ }
+]
