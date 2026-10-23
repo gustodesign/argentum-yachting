@@ -89,6 +89,16 @@ main{max-width:1180px;margin:0 auto;padding:30px 28px 120px}
 #bar .n{font-size:12px;color:var(--dim)}
 
 /* bildirim */
+/* kendi soru penceremiz */
+#modal{position:fixed;inset:0;z-index:120;background:rgba(6,6,6,.82);display:flex;
+       align-items:center;justify-content:center;padding:20px}
+#modalBox{background:var(--panel);border:1px solid var(--line);border-radius:5px;
+          max-width:460px;width:100%;padding:30px 28px;animation:pop .18s ease}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#modalBox h3{font-size:21px;margin-bottom:10px}
+#modalBox p{color:var(--dim);font-size:13px;line-height:1.7;margin:0 0 20px;white-space:pre-line}
+#modalBox .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
+
 #toast{position:fixed;top:82px;right:24px;z-index:90;max-width:380px;display:grid;gap:8px}
 .toast{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
        border-radius:3px;padding:13px 16px;font-size:13px;animation:slide .25s ease}
@@ -113,6 +123,16 @@ main{max-width:1180px;margin:0 auto;padding:30px 28px 120px}
 <body>
 
 <div id="toast"></div>
+
+<div id="modal" class="hidden"><div id="modalBox">
+  <h3 id="mTitle"></h3>
+  <p id="mBody"></p>
+  <input id="mInput" class="hidden" autocomplete="off">
+  <div class="acts">
+    <button id="mCancel">Vazgeç</button>
+    <button id="mOk" class="btn-gold">Tamam</button>
+  </div>
+</div></div>
 
 <!-- ══════════════════ GİRİŞ ══════════════════ -->
 <div id="login" class="card">
@@ -247,6 +267,35 @@ const S = {
 
 /* ─────────────────────────── yardımcılar ─────────────────────── */
 const $ = id => document.getElementById(id);
+
+/* Tarayıcının prompt/confirm pencereleri bastırılabiliyor; kendi pencerelerimizi kullanıyoruz. */
+let modalResolve = null;
+function openModal({ title, body = '', input = null, ok = 'Tamam', cancel = 'Vazgeç', danger = false }) {
+  $('mTitle').textContent = title;
+  $('mBody').textContent = body;
+  $('mBody').style.display = body ? '' : 'none';
+  const inp = $('mInput');
+  if (input !== null) {
+    inp.classList.remove('hidden');
+    inp.value = input.value || '';
+    inp.placeholder = input.placeholder || '';
+  } else inp.classList.add('hidden');
+  $('mOk').textContent = ok;
+  $('mOk').className = danger ? 'btn-danger' : 'btn-gold';
+  $('mCancel').textContent = cancel;
+  $('modal').classList.remove('hidden');
+  setTimeout(() => (input !== null ? inp : $('mOk')).focus(), 60);
+  return new Promise(res => { modalResolve = res; });
+}
+function closeModal(val) {
+  $('modal').classList.add('hidden');
+  const r = modalResolve; modalResolve = null;
+  if (r) r(val);
+}
+const askText    = (title, body, placeholder) =>
+  openModal({ title, body, input: { placeholder } });
+const askConfirm = (title, body, ok = 'Evet', danger = true) =>
+  openModal({ title, body, ok, danger }).then(v => v !== null);
 
 function toast(msg, kind) {
   const el = document.createElement('div');
@@ -533,8 +582,10 @@ async function addPhotos(files) {
 }
 
 /* ─────────────────────────── yeni / sil ──────────────────────── */
-function newYacht() {
-  const name = prompt('Yeni teknenin adı:');
+async function newYacht() {
+  const name = await askText('Yeni tekne',
+    'Teknenin adını yazın. Diğer bilgileri ve fotoğrafları sonraki adımda ekleyeceksiniz.',
+    'örn. Deniz Yıldızı');
   if (!name || !name.trim()) return;
   let id = slug(name);
   if (!id) { toast('Bu isimden geçerli bir kısa ad üretilemedi.', 'err'); return; }
@@ -551,10 +602,13 @@ function newYacht() {
   toast('Tekne oluşturuldu. Bilgileri doldurup en az bir fotoğraf ekleyin.', 'ok');
 }
 
-function deleteYacht() {
+async function deleteYacht() {
   const y = S.yachts.find(x => x.id === S.editing);
   if (!y) return;
-  if (!confirm(`"${y.name}" siteden tamamen kaldırılacak. Emin misiniz?\n\nBu işlem Yayınla dedikten sonra geçerli olur.`)) return;
+  const ok = await askConfirm(`${y.name} silinsin mi?`,
+    'Tekne, bilgileri ve fotoğraflarıyla birlikte siteden kaldırılacak.\nBu işlem Yayınla dedikten sonra geçerli olur.',
+    'Sil');
+  if (!ok) return;
   S.yachts = S.yachts.filter(x => x.id !== y.id);
   delete S.photos[y.id];
   S.editing = null;
@@ -712,8 +766,12 @@ $('loginBtn').onclick = () => {
 };
 $('tok').addEventListener('keydown', e => { if (e.key === 'Enter') $('loginBtn').click(); });
 
-$('logoutBtn').onclick = () => {
-  if (changedIds().size && !confirm('Yayınlanmamış değişiklikler var. Yine de çıkmak istiyor musunuz?')) return;
+$('logoutBtn').onclick = async () => {
+  if (changedIds().size) {
+    const ok = await askConfirm('Çıkmak istiyor musunuz?',
+      'Yayınlanmamış değişiklikleriniz var. Çıkarsanız bunlar kaybolur.', 'Çık');
+    if (!ok) return;
+  }
   localStorage.removeItem('ay_token');
   location.reload();
 };
@@ -724,7 +782,9 @@ $('delBtn').onclick   = deleteYacht;
 $('search').oninput   = renderList;
 $('pubBtn').onclick   = publish;
 $('resetBtn').onclick = async () => {
-  if (!confirm('Yayınlanmamış tüm değişiklikler geri alınacak. Emin misiniz?')) return;
+  const ok = await askConfirm('Değişiklikler geri alınsın mı?',
+    'Yayınlanmamış tüm düzenlemeleriniz silinecek ve sitedeki hale dönülecek.', 'Geri al');
+  if (!ok) return;
   showProgress('Geri alınıyor…');
   S.editing = null;
   await loadRepo();
@@ -737,6 +797,16 @@ $('resetBtn').onclick = async () => {
   toast('Değişiklikler geri alındı.', 'ok');
 };
 $('fileIn').onchange = e => { addPhotos([...e.target.files]); e.target.value = ''; };
+
+$('mOk').onclick     = () => closeModal($('mInput').classList.contains('hidden') ? true : $('mInput').value);
+$('mCancel').onclick = () => closeModal(null);
+$('modal').onclick   = e => { if (e.target === $('modal')) closeModal(null); };
+$('mInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') { e.preventDefault(); $('mOk').click(); }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !$('modal').classList.contains('hidden')) closeModal(null);
+});
 
 ['f_name','f_type','f_base','f_year','f_length','f_beam','f_guests','f_cabins','f_crew',
  'd_en','d_tr','d_es','d_it'].forEach(id =>
