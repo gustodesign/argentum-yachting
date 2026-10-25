@@ -262,7 +262,6 @@ const S = {
   photos: {},        // tekne id -> [{key, url, src:'repo'|'new'}]
   photosOrig: {},    // yayındaki fotoğraf sırası (karşılaştırma için)
   editing: null,
-  cb: 0,             // yayın sonrası önbellek kırıcı
 };
 
 /* ─────────────────────────── yardımcılar ─────────────────────── */
@@ -318,8 +317,10 @@ const pad = n => String(n).padStart(2, '0');
 const photoPath  = (id, i) => `${IMGDIR}/${id}/${pad(i + 1)}.webp`;
 const photoPathS = (id, i) => `${IMGDIR}/${id}/${pad(i + 1)}-s.webp`;
 
-function rawUrl(path) {
-  const q = S.cb ? '?cb=' + S.cb : '';
+function rawUrl(path, sha) {
+  // içerik imzası varsa adrese ekle: içerik değişince adres değişir,
+  // değişmeyince tarayıcı önbelleği kullanılır.
+  const q = sha ? '?v=' + String(sha).slice(0, 8) : '';
   return `https://raw.githubusercontent.com/${REPO.owner}/${REPO.name}/${REPO.branch}/${path}${q}`;
 }
 
@@ -349,9 +350,18 @@ async function loadRepo() {
   S.treeShas = {};
   tree.tree.forEach(t => { if (t.type === 'blob') S.treeShas[t.path] = t.sha; });
 
-  const raw = await fetch(rawUrl(DATA) + '?t=' + Date.now());
-  if (!raw.ok) throw new Error('Tekne verisi okunamadı (' + raw.status + ')');
-  S.yachts = await raw.json();
+  // Tekne verisi doğrudan GitHub'dan okunur (CDN önbelleği devreye girmez).
+  const dataSha = S.treeShas[DATA];
+  if (dataSha) {
+    const b = await gh('/git/blobs/' + dataSha);
+    const bin = atob((b.content || '').replace(/\n/g, ''));
+    const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+    S.yachts = JSON.parse(new TextDecoder('utf-8').decode(bytes));
+  } else {
+    const raw = await fetch(rawUrl(DATA) + '?t=' + Date.now());
+    if (!raw.ok) throw new Error('Tekne verisi okunamadı (' + raw.status + ')');
+    S.yachts = await raw.json();
+  }
   S.original = JSON.stringify(S.yachts);
 
   S.photos = {};
@@ -360,7 +370,8 @@ async function loadRepo() {
     S.photos[y.id] = [];
     for (let i = 0; i < (y.n || 0); i++) {
       const p = photoPath(y.id, i);
-      if (S.treeShas[p]) S.photos[y.id].push({ key: p, url: rawUrl(photoPathS(y.id, i)), src: 'repo' });
+      const ps = photoPathS(y.id, i);
+      if (S.treeShas[p]) S.photos[y.id].push({ key: p, url: rawUrl(ps, S.treeShas[ps]), src: 'repo' });
     }
     S.photosOrig[y.id] = S.photos[y.id].map(p => p.key);
   });
@@ -726,7 +737,6 @@ async function publish() {
     });
 
     setProgress(1, 'Tamamlandı');
-    S.cb = Date.now();
     await loadRepo();
     hideProgress();
     renderList();
